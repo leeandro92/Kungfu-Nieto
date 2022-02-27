@@ -10,28 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">  
     <title>Xiang Feng</title>
     <script src="https://kit.fontawesome.com/c4c655a3f6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>   
       <div class="img-header">
-        <a href="index.html"><img src="fotos/yinyang.png" alt="yinyang"></a>                   <!--Logo -->
+        <a href="index.html"><img src="fotos/yinyang.png" alt="yinyang"></a>                  
       </div> 
-      <h1>Xiang feng Kung fu</h1>                  <!--titulo principal-->               
+      <h1>Xiang feng Kung fu</h1>                                 
     </header>
-    <nav>
-      <ul class="nav-container">
-          <a href="index.html"><li>Home</li></a>
-          <a href="html/contacto.html"><li>Contactos</li></a>  
-          <a href="html/galeria.html"><li>Galeria</li></a>                <!--Barra de navegacion-->
-          <a href="html/Nosotros.html"><li>Taller</li></a>
-          <a href="html/Actividad.html"><li>Historia</li></a>  
-      </ul>
-    </nav>
-    
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navegacion">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="navbar-brand">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="navbar-brand " href="index.html" id="navbar">Inicio</a>
+            <a class="nav-link active"id="nav-item" aria-current="page" href="html/galeria.html">Galeria</a>
+            <a class="nav-link"id="nav-item" href="html/contacto.html">Contactos</a>
+            <a class="nav-link" id="nav-item"href="html/Nosotros.html">Taller</a>
+            <a class="nav-link"id="nav-item" href="html/Actividad.html">Historia</a>
+          </div>
+        </div>
+      </div>
+    </nav>  
     <main>
       <div class="main-container">
        <!--Primera seccion del index-->
-        <section class="primeraSeccion">
+        <section class="container-fluid" id="primeraSeccion">
          <article class="contenedorKungfu"> 
               <h2>¿Que es el kung fu?</h2>
               <p> El Kung Fu es un arte marcial de origen chino que se caracteriza por tener un caracter no violento con una base filosofica. para buscar la concentracion y el control de la energia. Es quizás una de las artes marciales más conocidas, porque muchas películas incorporan sus técnicas.puede describirse en nuestro idioma como Trabajo Continuo a través del tiempo, y también como Sabiduría y Maestría, y un saber Maestro es pragmático y es coherente, no se queda en la teoría, es aquel enriquecido con la experiencia y que se aplica a la vida diaria, exige una Continuidad y una Ética entre el decir, el sentir y el hacer. Estas son quizás las traducciones más coherentes y fieles. En China existen aproximadamente más de 36O estilos duros de lucha, poco más de 1O estilos blandos, y técnicas de armas, que conforman las llamadas Artes Marciales Chinas; en occidente, se globalizó la denominación de todos esos diferentes estilos en la palabra Kung Fu.</p>   
@@ -39,18 +49,20 @@
        </section>
        <!--Fin de primera seccion -->
       <!--Aside-->
-       <aside id="aside">
+       <aside id="aside" class="">
            <div id="cuenta">
+             <!--Iniciar sesion -->
              <div>
-               <h4 class="titulo-login">Iniciar sesion</h4>                                   <!--Iniciar sesion -->
+               <h4 class="titulo-login">Iniciar sesion</h4>                                   
             </div>
-            <form action="" class="form-login">
-                <label for="">Usuario: <input type="text"> </label>
-                <label for="">Contraseña: <input type="password"> </label> 
+            <form class="form-login">
+                <label for="log-usuario">Usuario: <input type="text" id="log-usuario"> </label>
+                <label for="log-pass">Contraseña: <input type="password" id="log-pass"> </label> 
                 <input type="submit" value="Ingresar" class="ingresar"> 
               </form>
            </div>
-           <div id="descuento">                                               <!--Descuentos -->
+           <!--Descuentos -->
+           <div id="descuento">                                               
             <div>
               <h4 class="titulo-descuento">¡No te pierdas nuestros descuentos con 20% OFF en tu matricula!</h4>
             </div>
@@ -63,12 +75,13 @@
           </div>
        </aside>
        <!--Fin de aside -->
-        <!-- Segunda seccion del index -->
+      <!-- Segunda seccion del index -->
        <section class="segundaSeccion">
          <div class="contenedor-objetivos">
             <div>
               <h3 class="titulo-objetivos">Objetivos</h3>
             </div>
+            <!--Objetivos de kung fu -->
             <ul class="ul-objetivos">
               <li>Promover y desarrollar el Shaolín Kung Fu, para construír una Escuela de Arte Marcial Chino, sobre los principios de la libertad, paz y justicia.</li>
               <li>Entregar a los alumnos, a través de prácticas ejemplificadoras, las normas, valores y conductas de una correcta disciplina marcial.</li>
@@ -81,6 +94,7 @@
             <div>
               <h3 class="titulo-beneficios">Beneficios</h3>
             </div>
+            <!--Beneficios de kung fu-->
             <ul class="ul-beneficios"> 
               <li>Asegurar un riego sanguíneo saludable al cerebro</li>
               <li>Aumentar la capacidad pulmonar</li>
@@ -96,34 +110,32 @@
        <!--Fin de segunda seccion -->
        <!--Tercera seccion del index-->
        <section class="terceraSeccion">
-          <div class="titulo-tecnicas"><h3>Sistema tecnico de pelea</h3></div>
-        <div class="contenedor-tigre">
-            <div class="fotoTigre">
-              <img src="fotos/tigre1.png" alt="tigre kung fu" class="img-tigre">
-            </div>
-            <div class="textoTigre">
-              <h4>Forma del tigre</h4>
-              <p>El estilo Tigre en Kung Fu incorpora una estrategia triple en sus técnicas específicas, derivadas del comportamiento de este animal, el cual es dominante y no tiene depredadores naturales. La sencillez, franqueza y poder son los tres elementos necesarios para ésta estrategia. El estilo del tigre es de agresión y ataque, no de evasión. De ahí, que haga hincapié en aplicar una fuerza abrumadora que pretende poner un rápido fin al enfrentamiento físico</p>
-            </div>
+          <div class="titulo-tecnicas">
+            <h3>Sistema tecnico de pelea</h3>
           </div>
-          <div class="contenedor-grulla">
-              <div class="foto-grulla">
-                <img src="fotos/grulla2.jpg" alt="grulla kung-fu"class="img-grulla">
+          <div class="card-group">
+            <div class="card">
+              <img src="fotos/tigre1.png" class="card-img-top" alt="Tigre kungfu" id="tigre">
+              <div class="card-body">
+                <h5 class="card-title">Forma del tigre</h5>
+                <p class="card-text">El estilo Tigre en Kung Fu incorpora una estrategia triple en sus técnicas específicas, derivadas del comportamiento de este animal, el cual es dominante y no tiene depredadores naturales. La sencillez, franqueza y poder son los tres elementos necesarios para ésta estrategia. El estilo del tigre es de agresión y ataque, no de evasión. De ahí, que haga hincapié en aplicar una fuerza abrumadora que pretende poner un rápido fin al enfrentamiento físico.</p> 
               </div>
-              <div class="texto-grulla"> 
-                <h4>Forma de grulla</h4>
-                <p>El estilo de kung fu,conocido como "grulla" es famoso por su postura, en la que te colocas sobre una pierna y abres los brazos como una grulla que despliega sus alas.Esta tecnica se usa mas a menudo en el combate para bloquear y golpear al adversario con la presion de los dedos hacia un punto en especifico.</p>
+            </div>
+            <div class="card">
+              <img src="fotos/grulla2.jpg" class="card-img-top" alt="Grulla kungfu" id="grulla">
+              <div class="card-body">
+                <h5 class="card-title">Forma de Grulla</h5>
+                <p class="card-text">El estilo de kung fu,conocido como "grulla" es famoso por su postura, en la que te colocas sobre una pierna y abres los brazos como una grulla que despliega sus alas.Esta tecnica se usa mas a menudo en el combate para bloquear y golpear al adversario con la presion de los dedos hacia un punto en especifico.</p>
               </div>
-          </div>
-          <div class="contenedor-serpiente">
-            <div class="foto-serpiente">
-              <img src="fotos/serpiente.jpg" alt="Serpiente kung-fu" class="img-serpiente">
             </div>
-            <div class="texto-serpiente">
-              <h4>Forma de serpiente</h4>
-              <p>Posee la concentración y ligereza de la Grulla, además, sus movimientos tienen gran velocidad y determinación como el Tigre, sus desplazamientos son circulares y tiene muchas técnicas de agarres y palancas.El origen exacto de este Estilo de Kung Fu es incierto pero surgió dentro del Templo Shaolin de la pura imitación al igual que todos los Estilos de los animales.</p>
+            <div class="card">
+              <img src="fotos/serpiente.jpg" class="card-img-top" alt="Serpiente kungfu" id="serpiente">
+              <div class="card-body">
+                <h5 class="card-title">Forma de Serpiente</h5>
+                <p class="card-text">Posee la concentración y ligereza de la Grulla, además, sus movimientos tienen gran velocidad y determinación como el Tigre, sus desplazamientos son circulares y tiene muchas técnicas de agarres y palancas.El origen exacto de este Estilo de Kung Fu es incierto pero surgió dentro del Templo Shaolin de la pura imitación al igual que todos los Estilos de los animales.</p>
+              </div>
             </div>
-          </div>
+          </div>  
        </section>
        <!-- Fin de tercera seccion -->
       </div>
@@ -131,16 +143,16 @@
     <footer>
       <div class="footer-contenedor">
         <div>
-          <h5>Todos los derechos reservados para Xiang Feng.com ©2022 / Leandro Nieto</h5>
+          <h5 id="copyright">Todos los derechos reservados para Xiang Feng.com ©2022 / Leandro Nieto</h5>
         </div>
         <ul class="footer-contacto">
-          <li> <i class="fas fa-male"></i>Profesor: Nieto Leandro</li>
-          <li> <i class="fas fa-envelope"></i>Email: leandro.46@hotmail.com</li>
-          <li> <i class="fas fa-mobile-alt"></i>Celular: 1157862394</li>
+          <li class="li-footer"> <i class="fas fa-male"></i>Profesor: Nieto Leandro</li>
+          <li class="li-footer"> <i class="fas fa-envelope"></i>Email: leandro.46@hotmail.com</li>
+          <li class="li-footer"> <i class="fas fa-mobile-alt"></i>Celular: 1157862394</li>
         </ul>
         <div class="redes-sociales">
           <div>
-            <h5>Seguinos en nuestras redes</h5>
+            <h5 class="redesSociales">Seguinos en nuestras redes</h5>
           </div>
           <ul class="contenedor-redes">
             <a href="https://instagram.com" target="_blank"><li><i class="fab fa-instagram"></i></li></a> 
