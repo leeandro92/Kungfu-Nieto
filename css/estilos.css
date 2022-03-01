@@ -1,347 +1,330 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 Header {
-    display: flex;
-    width: 100%;
-    background-color: #ffffff;
-    justify-content: center;
-    height: 400px;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
 }
 .img-header{
-    height: 45%;
-    display: flex;
-    animation-name: movimiento;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier();
+  height: 45%;
+  display: flex;
+  animation-name: movimiento;
+  animation-duration: 1.5s;
 }
 @keyframes movimiento  {
-    0% {
-        transform: translate(-300px);
-    }
-     
-    100% {
-        transform: translate(0px); 
-    }
+  0% {
+      transform: translate(-300px);
+  }
+   
+  100% {
+      transform: translate(0px); 
+  }
 }
 .img-header img{
 width: 100%;
 height: 100%;
 }
- h1{
-    font-size: 7vw;
-    text-align: center;
- }
+h1{
+  font-size: 7vw;
+  text-align: center;
+}
 
 .main-container {
-    display: grid;
-    background-color: rgb(11, 11, 14);
-    color: white;                           
+  display: grid;
+  background-color: rgb(11, 11, 14);
+  color: white;                           
 }       
 #primeraSeccion {
-    grid-area: primeraseccion;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  grid-area: primeraseccion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 #aside {
-    grid-area: aside;
-    display: flex;
-    color: white;
-    background-color: black;
-    
-    height: 100%; 
+  grid-area: aside;
+  display: flex;
+  color: white;
+  background-color: rgb(11, 11, 14);
+  
+  height: 100%; 
 }
 #cuenta {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #descuento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
 }
 .titulo-descuento {
-    animation-name: descuento;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: descuento;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 
 }
 @keyframes descuento {
-    0% {
-        background-color: #070707;
-        color:rgb(248, 247, 247);
-    }
-    50%{
-        background-color: #ffffff;
-        color:rgb(0, 0, 0)
-    }
-    75%{
-        background-color: #070707;
-        color:rgb(248, 247, 247);
-    }
-    100%{
-        background-color: #fdfdfd;
-        color:rgb(0, 0, 0)
-    }
+  0% {
+      background-color: #070707;
+      color:rgb(248, 247, 247);
+  }
+  50%{
+      background-color: #ffffff;
+      color:rgb(0, 0, 0)
+  }
+  75%{
+      background-color: #070707;
+      color:rgb(248, 247, 247);
+  }
+  100%{
+      background-color: #fdfdfd;
+      color:rgb(0, 0, 0)
+  }
 }
 .titulo-login {
-    text-align: center;
+  text-align: center;
 }
 label {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .form-login{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        border: 2px solid white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border: 2px solid white;
 }
 .ingresar{
-    transition:all 0.2s ;
+  transition:all 0.2s ;
 
 }
 .ingresar:hover {
-    background-color: #5c5d5f;
-    transform: scale(1,1);
+  background-color: #5c5d5f;
+  transform: scale(1,1);
 }
 .form-descuento{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid white;
 }
 .contenedorKungfu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .contenedorKungfu h2 {
-    text-align: center;
+  text-align: center;
 }
 .contenedorKungfu p{ 
-    padding: 15px;
- }
+  padding: 15px;
+}
 .segundaSeccion {
-    grid-area: segundaseccion;
-    display: flex;
+  grid-area: segundaseccion;
+  display: flex;
 }
 .contenedor-objetivos {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
 }
 .titulo-objetivos {
-    text-align: center;
-    font-size: 35px;
-    margin: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 35px;
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .ul-objetivos{
-    display: flex;
-    justify-content: space-evenly;
-    height: 80%;
-    flex-direction: column;
-    margin: 15px;
-    padding:20px;
-    border: 2px solid rgb(255, 255, 255);  
+  display: flex;
+  justify-content: space-evenly;
+  height: 80%;
+  flex-direction: column;
+  margin: 15px;
+  padding:20px;
+  border: 2px solid rgb(255, 255, 255);  
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 #enviar:hover {
-    background-color: #8b8f97;
-    transition: 0.5s;
+  background-color: #8b8f97;
+  transition: 0.5s;
 }
 .boton-enviar:hover {
-    background-color: #85888d;
-    transition: 0.5s;
+  background-color: #85888d;
+  transition: 0.5s;
 }
 .contenedor-beneficios {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-   padding: 20px;
-    width: 50%;
-    justify-content: flex-start;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ padding: 20px;
+  width: 50%;
+  justify-content: flex-start;
 }
 .titulo-beneficios{
-    text-align:  center;
-    font-size: 40px;
-    margin: 10px;
+  text-align:  center;
+  font-size: 40px;
+  margin: 10px;
 }
 .ul-beneficios{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid rgb(248, 248, 248);   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid rgb(248, 248, 248);   
 }
 .terceraSeccion {
-    grid-area: terceraseccion;
-    display: grid; 
+  grid-area: terceraseccion;
+  display: grid; 
 }
 .titulo-tecnicas{
-    grid-area: titulo;
+  grid-area: titulo;
 }
 .contenedor-tigre {
-    grid-area: tigre;
-    width: 90%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    justify-self: center;
+  grid-area: tigre;
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-self: center;
 }
 .fotoTigre{
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 }
 .img-tigre{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .textoTigre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
 }
 .textoTigre h4 {
-    font-size: 40px;
+  font-size: 40px;
 }
 .contenedor-grulla{
-    grid-area: grulla;
-    width: 90%;
-    height: 95%; 
+  grid-area: grulla;
+  width: 90%;
+  height: 95%; 
 }
 .img-grulla {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .foto-grulla{ 
-    height: 50%;
-    width:100%;
+  height: 50%;
+  width:100%;
 }
 .contenedor-serpiente{
-    grid-area: serpiente;
-    width: 90%;
-    height: 95%;  
+  grid-area: serpiente;
+  width: 90%;
+  height: 95%;  
 }
 .foto-serpiente {
-    height: 50%;
-    width:100%;
+  height: 50%;
+  width:100%;
 }
 .img-serpiente{ 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .texto-serpiente{
-     display: flex;
-     flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 .texto-serpiente h4 {
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 footer{ 
-    background-color: azure;
-    color: rgb(12, 11, 11);
+  background-color: azure;
+  color: rgb(12, 11, 11);
 }
 i {
-    color: #0f0f0f;
+  color: #0f0f0f;
 }
 .footer-contenedor {
-    display: flex;
-    justify-content: space-evenly;
-    row-gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 15px;
 }
 .footer-contacto {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 #copyright {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .contenedor-redes {
-    display: flex;
-    column-gap: 30px;
+  display: flex;
+  column-gap: 30px;
 }
 .redes-sociales{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 i:hover {
-    transform: scale(1.5,1.5);
-    transition:all 1s; 
+  transform: scale(1.5,1.5);
+  transition:all 1s; 
 }
-                                                                /* seccion contactos */
+                                                              /* seccion contactos */
 
 .main-contactos {
-    display: grid;
-    background-color: rgb(11, 11, 14);
-    color: white; 
+  display: grid;
+  background-color: rgb(11, 11, 14);
+  color: white; 
 }
 .titulo-mensaje{
-    text-align: center;
-    margin: 20px
-}
-.ul-mensaje {
-    display: flex;
-    flex-direction: column;  
-}
-.ul-mensaje input {
-    width: 60%;
+  text-align: center;
+  margin: 20px
 }
 .contenedor-mensaje {
-    grid-area: contacto;
+  grid-area: contacto;
 }
 .contenedor-cuenta{ 
-    grid-area: crearcuenta;
+  grid-area: crearcuenta;
 }    
-.ul-mensaje {
-    display: flex;
-    flex-direction: column;
-}
-.input-sexo {
-    width: 50px;
-}
 
-                                                               /*Seccion galeria */
+
+                                                             /*Seccion galeria */
 .main-galeria {
-    display: grid;
-    background-color: rgb(11, 11, 14);
-    color: white; 
+  display: grid;
+  background-color: rgb(11, 11, 14);
+  color: white; 
 }
 .contenedor-fotos {
-    grid-area: fotos;
+  grid-area: fotos;
 }
 .contenedor-videos {
-    grid-area: videos;
+  grid-area: videos;
 }
 .titulo-fotos {
-    text-align: center;
+  text-align: center;
 }
 .imagenes {
-    display: grid;
+  display: grid;
 }
 .fotos {
-    height: 350px;
-    width: 90%;
+  height: 350px;
+  width: 90%;
 }
 .carousel-inner {
-    transform: translateX(20px);
+  transform: translateX(20px);
 }
 .img-1 {
 grid-area: foto1;
@@ -350,1151 +333,1127 @@ transition: all 0.5s;
 }
 
 .img-2{
-    grid-area: foto2;
-    transition: all 0.5s;
+  grid-area: foto2;
+  transition: all 0.5s;
 }
 
 .img-3 {
-    grid-area: foto3;
-    transition: all 0.5s;
+  grid-area: foto3;
+  transition: all 0.5s;
 }
 
 .img-4 {
-    grid-area: foto4;
-    transition: all 0.5s;
+  grid-area: foto4;
+  transition: all 0.5s;
 }
 
 .img-5 {
-    grid-area: foto5;
-    transition: all 0.5s;
+  grid-area: foto5;
+  transition: all 0.5s;
 }
 
 .img-6 {
-    grid-area: foto6;
-    transition: all 0.5s;
+  grid-area: foto6;
+  transition: all 0.5s;
 }
 
 .titulo-videos {
-    text-align: center;
-    font-size: 2.5vw;
-    margin: 10px;
+  text-align: center;
+  font-size: 2.5vw;
+  margin: 10px;
 }
 .videos{ 
-    display: grid;
+  display: grid;
 }
 .video1 {
-    grid-area: video1;
-    transition: all 0.5s;
-    width: 90%;
-    height: 90%;
+  grid-area: video1;
+  transition: all 0.5s;
+  width: 90%;
+  height: 90%;
 }
 .video1:hover {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .video2 {
-    grid-area: video2;
-    transition: all 0.5s;
-    width: 90%;
-    height: 90%;
+  grid-area: video2;
+  transition: all 0.5s;
+  width: 90%;
+  height: 90%;
 }
 .video2:hover {
-    transform: scale( 1.1,1.1)
+  transform: scale( 1.1,1.1)
 }
 .video3 {
-    grid-area: video3;
-    transition: all 0.5s;
-    width: 90%;
-    height: 90%;
+  grid-area: video3;
+  transition: all 0.5s;
+  width: 90%;
+  height: 90%;
 }
 .video3:hover {
-    transform: scale(1.2,1.2)
+  transform: scale(1.2,1.2)
 }
 .video4 {
-    grid-area: video4;
-    transition: all 0.5s;
-    width: 90%;
-    height: 90%;
+  grid-area: video4;
+  transition: all 0.5s;
+  width: 90%;
+  height: 90%;
 }
 .video4:hover{ 
-    transform: translateX(-30px) scale( 1.1,1.1)
+  transform: translateX(-30px) scale( 1.1,1.1)
 }
 .video5 {
-    grid-area: video5;
-    transition: all 0.5s;
-    width: 90%;
-    height: 90%;
+  grid-area: video5;
+  transition: all 0.5s;
+  width: 90%;
+  height: 90%;
 }
 .video5:hover {
-    transform: scale(1.2,1.2)
+  transform: scale(1.2,1.2)
 }
 .video6 {
-    grid-area: video6;
-    transition: all 0.5s;
-    width: 90%;
-    height: 90%;
-   
+  grid-area: video6;
+  transition: all 0.5s;
+  width: 90%;
+  height: 90%;
 }
 .video6:hover {
-    transform: translateX(-30px) scale( 1.1,1.1)
+  transform: translateX(-30px) scale( 1.1,1.1)
 }
-                                                      /* seccion historia */
+                                                    /* seccion historia */
 .contenedorHistoria {
-    display:grid;
-    background-color: rgb(11, 11, 14);
-    color: white; 
+  display:grid;
+  background-color: rgb(11, 11, 14);
+  color: white; 
 }
 #seccionHistoria {
-    grid-area:historia ;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  grid-area:historia ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-    #seccionFamosos{
-        grid-area:famosos;
+  #seccionFamosos{
+      grid-area:famosos;
 }
 .tituloHistoria h2{
-    text-align: center;
+  text-align: center;
 }
 .texto-historia{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .ipman-foto {
-    animation-name:ipman ;
-    animation-duration:15s ;
-    animation-iteration-count:infinite ;
-    height: 400px;
-    width: 900px;
+  animation-name:ipman ;
+  animation-duration:15s ;
+  animation-iteration-count:infinite ;
+  height: 400px;
+  width: 900px;
 }
 @keyframes ipman {
-    0% {
-        background-image: url(../fotos/ipman.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;    
-    }
-     
-    50% {
-        background-image: url(../fotos/ipman2.jpg) ;
-        background-repeat: no-repeat;
-        background-size: contain;
-        
-    }
-    100% {
-        background-image: url(../fotos/ipman3.jpeg) ;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+  0% {
+      background-image: url(../fotos/ipman.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;    
+  }
+  50% {
+      background-image: url(../fotos/ipman2.jpg) ;
+      background-repeat: no-repeat;
+      background-size: contain;  
+  }
+  100% {
+      background-image: url(../fotos/ipman3.jpeg) ;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
 }
 .bruce-lee{ 
-       display: flex;
-       flex-direction: column;
-   }
+     display: flex;
+     flex-direction: column;
+ }
 .foto-brucelee {
-       width: 50%;
-        height: 400px;
-   }
+     width: 50%;
+      height: 400px;
+ }
 .img-bruce {
-       width: 100%;
-       height: 100%;
+     width: 100%;
+     height: 100%;
 } 
-                                            /*seccion taller*/
+                                          /*seccion taller*/
 
 #seccion-taller {
-        display:flex;
-        flex-direction: column; 
-        background-color: rgb(11, 11, 14);
-        color: white;   
-        height: 100%;
+      display:flex;
+      flex-direction: column; 
+      background-color: rgb(11, 11, 14);
+      color: white;   
+      height: 100%;
 }
 .tabla-item th {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 .tabla-item {
-    border: 1px solid white;
-    
+  border: 1px solid white;
 }
 .tabla-item td {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 .tituloTaller{ 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .contenedor-tablas {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
 }
 .titulo-ubicacion {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
 }
 #ubicacion {
-    display: flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-                                                                /* VERSION MOBILE*/
+                                                              /* VERSION MOBILE*/
 
- 
- @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
 Header {
-        height: 150px;
-    }
+      height: 150px;
+  }
 .img-header {
-    animation-name:movimiento  ;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name:movimiento  ;
+  animation-duration: 1.5s;
 }
 @keyframes movimiento  {
-    0% {
-        transform: translate(-50px);
-    }  
-    100% {
-        transform: translate(0px); 
-    }
+  0% {
+      transform: translate(-50px);
+  }  
+  100% {
+      transform: translate(0px); 
+  }
 }
 #navbar{
-    display: none;
+  display: none;
 }
 .nav-container {
-    row-gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .nav-container li {
-     font-size: 20px;
-    justify-content: center; 
+   font-size: 20px;
+  justify-content: center; 
 }
 .nav-container a {
-    width: 90%;
+  width: 90%;
 }
 .main-container {
-    grid-template-columns:100%;
-    grid-template-rows: 0.3fr 0.5fr 0.7fr 0.5fr;
-    grid-template-areas:    "primeraseccion"
-                            "segundaseccion" 
-                            "terceraseccion"
-                            "aside";
-                                
+  grid-template-columns:100%;
+  grid-template-rows: 0.3fr 0.5fr 0.7fr 0.5fr;
+  grid-template-areas:    "primeraseccion"
+                          "segundaseccion" 
+                          "terceraseccion"
+                          "aside";
+                              
 }
 .primeraSeccion{ 
-    grid-area: primeraseccion;
-    height: 100%;
+  grid-area: primeraseccion;
+  height: 100%;
 }
 .contenedorKungfu{ 
-    height: 75%;
-    width: 95%;
-    justify-content: space-evenly;
+  height: 75%;
+  width: 95%;
+  justify-content: space-evenly;
 }
 .contenedorKungfu h2 {
-    font-size: 40px;
+  font-size: 40px;
+  margin-top: 20px;
 }
 .segundaSeccion {
-    grid-area: segundaseccion;
-    flex-direction: column;
-    width: 100%;
+  grid-area: segundaseccion;
+  flex-direction: column;
+  width: 100%;
 }
 .ul-beneficios {
-   
-    display: flex;
-    flex-direction: column;
+ 
+  display: flex;
+  flex-direction: column;
 }
 .terceraSeccion {
-    grid-area: terceraseccion;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
+  grid-area: terceraseccion;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
 }
 #aside {
-    grid-area: aside;
-    height: 900px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(11, 11, 14);
-    color: black;
+  grid-area: aside;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(11, 11, 14);
+  color: black;
 }
 
 #cuenta {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    background-color: rgb(11, 11, 14);
-    color: white; 
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  background-color: rgb(11, 11, 14);
+  color: white; 
 }
 #descuento {
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
-    background-color: rgb(11, 11, 14);
-    color: white; 
+  height: 50%;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: rgb(11, 11, 14);
+  color: white; 
 }
 .titulo-login {
-    text-align: center;
-    font-size: 36px;
-    margin: 20px;
+  text-align: center;
+  font-size: 36px;
+  margin: 20px;
 }
 .form-login label{
-        height: 100%;
-        width: 95%;
-        display: flex;
-        font-size: 25px;
-        margin: 10px;
-        flex-direction: column;
+      height: 100%;
+      width: 95%;
+      display: flex;
+      font-size: 25px;
+      margin: 10px;
+      flex-direction: column;
 }
 .form-login {
-    display: flex;
-    height: 80%;
-    width: 70%;
+  display: flex;
+  height: 80%;
+  width: 70%;
 } 
 
 .ingresar {
-    margin-left: 10px;
-    margin-bottom: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .form-login input{
-    width: 200px;
-    font-size: 20px;
+  width: 200px;
+  font-size: 20px;
 }
 .form-descuento{
-    height: 85%;
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  height: 85%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .form-descuento label{
-    padding: 10px;
-    width: 200px;
+  padding: 10px;
+  width: 200px;
 }
 .form-descuento input{
-    width: 200px;
+  width: 200px;
 }
 .titulo-descuento{
-    font-size: 33px;
-    padding: 10px;
+  font-size: 33px;
+  padding: 10px;
 }
 
 .contenedor-objetivos{
-    width: 100%;
-    height: 700px;
+  width: 100%;
+  height: 700px;
 }
 .contenedor-beneficios {
-    width: 100%;
-    height: 30%;
-    
+  width: 100%;
+  height: 30%;
 }
 .ul-beneficios li{
-    padding: 15px; 
+  padding: 15px; 
 }
 .titulo-tecnicas h3 {
-    font-size: 9vw;
+  font-size: 9vw;
+  text-align: center;
+  margin: 20px;
 }
 .card-group {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
 }
 .card {
-    height: 80%;
-    width: 100%;
-    color: #fdfdfd;
+  height: 80%;
+  width: 100%;
+  color: #fdfdfd;
 }
 .card-body {
-    background-color: rgb(11, 11, 14);
+  background-color: rgb(11, 11, 14);
 }
 #grulla{
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 }
 #tigre{
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 }
 #serpiente{
-    height:50%;
-    width: 100%;
+  height:50%;
+  width: 100%;
 }
 .textoTigre h4 {
-    font-size: 25px;
+  font-size: 25px;
 }
 .texto-grulla h4 {
-    font-size: 25px;
-    text-align: center;
+  font-size: 25px;
+  text-align: center;
 }
 .texto-serpiente h4{
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .footer-contenedor {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 .footer-contacto {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 
-                                                        /* seccion contactos*/
+                                                      /* seccion contactos*/
 .main-contactos {
-    grid-template-columns:1fr ;
-    grid-template-rows:  450px 450px ;
-    grid-template-areas:"contacto"
-                        "crearcuenta"
-                        ;
+  grid-template-columns:1fr ;
+  grid-template-rows:  40% 50% ;
+  grid-template-areas:"contacto"
+                      "crearcuenta"
+                      ;
+           height: 1200px;          
 }
 .contenedor-mensaje h4 {
-    font-size: 30px;
-    text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 .contenedor-mensaje {
-    margin: 10px;
-    border: 2px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  margin: 10px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
 }
-.ul-mensaje {
-    row-gap: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contenedor-mensaje div {
+  padding: 10px;
 }
 input {
-    width: 70%;
-    border: 1px solid black;
+  width: 70%;
+  border: 1px solid black;
 }
 textarea {
-    width: 70%;
-    height: 15vw;
+  width: 70%;
+  height: 15vw;
 }
 .contenedor-cuenta h4{
-    font-size: 20px;
-    padding: 5px;
-    text-align:center;
+  font-size: 20px;
+  padding: 5px;
+  text-align:center;
 }
 .contenedor-cuenta {
-    height:90% ;
-    margin: 10px;
-    border: 1px solid white;
+  height:100% ;
+  margin: 10px;
+  border: 1px solid white;
+  
 
 }
 .form-cuenta {
-   display: flex; 
-   flex-direction: column;
-   justify-content: space-evenly; 
-   height: 90%;
-   align-items: center;
-   width: 100%;
+ display: flex; 
+ flex-direction: column;
+ justify-content: space-evenly; 
+ height: 70%;
+ align-items: center;
+ width: 100%;
 }
 
 .form-cuenta label {
-    font-size: 15px;
+  font-size: 15px;
 }
-.contenedor-precios div h5 {
-    font-size: 30px;
-    text-align: center;
-    
-}
-                                                                    /*Seccion galeria */
+
+                                                                  /*Seccion galeria */
 
 .main-galeria {
-    grid-template-columns:1fr ;
-    grid-template-rows:20% 70% ;
-    grid-template-areas:    "fotos"
-                            "videos"   ;
+  grid-template-columns:1fr ;
+  grid-template-rows:20% 70% ;
+  grid-template-areas:    "fotos"
+                          "videos"   ;
 }
 .contenedor-fotos{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
 }
 .titulo-fotos {
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 .imagenes{
-    
-    grid-template-columns:90% ;
-    grid-template-rows: 200px 300px 300px 300px 300px 290px;
-    grid-template-areas:    "foto1"
-                            "foto2"
-                            "foto3"
-                            "foto4"
-                            "foto5"
-                            "foto6";
-    justify-items: center;
-    row-gap: 15px;
+  
+  grid-template-columns:90% ;
+  grid-template-rows: 200px 300px 300px 300px 300px 290px;
+  grid-template-areas:    "foto1"
+                          "foto2"
+                          "foto3"
+                          "foto4"
+                          "foto5"
+                          "foto6";
+  justify-items: center;
+  row-gap: 15px;
 }
 .imagenes img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .contenedor-videos{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .videos{ 
-    height:2400px ;
-    grid-template-columns:90% ;
-    grid-template-rows:300px 300px 300px 300px 300px 300px ;
-    grid-template-areas:    "video1"
-                            "video2"
-                            "video3"
-                            "video4"
-                            "video5"
-                            "video6";
-    align-content: space-evenly;
-    justify-content: center;
+  height:2400px ;
+  grid-template-columns:90% ;
+  grid-template-rows:300px 300px 300px 300px 300px 300px ;
+  grid-template-areas:    "video1"
+                          "video2"
+                          "video3"
+                          "video4"
+                          "video5"
+                          "video6";
+  align-content: space-evenly;
+  justify-content: center;
 }
 .videos div {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .titulo-videos {
-    font-size: 6.5vw;
+  font-size: 6.5vw;
 }
 
-                                           /* seccion historia */
+                                         /* seccion historia */
 .contenedorHistoria{
-    height:100% ;
-    grid-template-columns:100% ;
-    grid-template-rows:0.8fr 1fr;
-    grid-template-areas:"seccion1 " 
-                        "seccion2";
- justify-items: center;
- align-content: space-evenly;              
+  height:100% ;
+  grid-template-columns:100% ;
+  grid-template-rows:0.8fr 0.8fr;
+  grid-template-areas:"seccion1 " 
+                      "seccion2";
+justify-items: center;
+align-content: space-evenly;              
 }    
 
 #seccionHistoria{ 
-    grid-area: seccion1;
-    width:95% ;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    margin-top: 20px;
-
+  grid-area: seccion1;
+  width:95% ;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .tituloHistoria {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .texto-historia {
-    padding: 10px; 
+  padding: 10px; 
 }
 
 #seccionFamosos{
-    grid-area: seccion2;
-    width:95% ;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  grid-area: seccion2;
+  width:95% ;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .titulo-famosos {
-    font-size: 30px;
-    text-align: center;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px;
 }
 
 .ipman-foto {
-    height: 350px;
-    width: 90%;
-    animation-name: ipman-mobile;
-    animation-duration:15s ;
-    animation-iteration-count: infinite;
+  height: 350px;
+  width: 90%;
+  animation-name: ipman-mobile;
+  animation-duration:15s ;
+  animation-iteration-count: infinite;
 }
 .foto_ipman img {
-    width: 90%;
-    height: 90%;
+  width: 90%;
+  height: 90%;
 }
 .titulo-ipman{
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  font-size: 25px;
+  margin: 15px;
 }
 .titulo-bruce {
-    font-size: 25px;
-    text-align: center;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px;
 }
 .foto-brucelee{
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .foto-brucelee img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .img-brucelee {
-    width: 90%;
-    height: 50%;
+  width: 90%;
+  height: 50%;
 }
 
 @keyframes ipman-mobile {
-    0% {
-        background-image: url(../fotos/ipman.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-     25% {
-    background-image: url(../fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-   }    
-    
-    40% {
-        background-image: url(../fotos/ipman2.jpg) ;
-        background-size: cover;  
-    }
-    100% {
-        background-image: url(../fotos/ipman3.jpeg) ;
-        background-size: cover;   
-    }
+  0% {
+      background-image: url(../fotos/ipman.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+   25% {
+  background-image: url(../fotos/ipman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ }    
+  
+  40% {
+      background-image: url(../fotos/ipman2.jpg) ;
+      background-size: cover;  
+  }
+  100% {
+      background-image: url(../fotos/ipman3.jpeg) ;
+      background-size: cover;   
+  }
 }
 
 
-                                                    /*seccion taller*/
+                                                  /*seccion taller*/
 #seccion-taller {
-   display: flex;
-   flex-direction: column;
-   height: 600px;
+ display: flex;
+ flex-direction: column;
+ height: 100%;
 }
 .tituloTaller h2{
-    font-size: 25px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
 .contenedor-tablas{
-    height: 200px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  height: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  
+}
+tr,td {
+  padding: 2px;
 }
 #tabla {
-    margin-top: 10px;
-}
-.foto-taller {
-    width: 90%;
-    height: 90%;
+  margin: 10px;
 }
 #ubicacion{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 .titulo-ubicacion {
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 }
-                                                                          /* ESCRITORIO*/
+                                                                        /* ESCRITORIO*/
 @media only screen and (min-width:992px) {
 * {
-    font-size: 1.5vw; 
+  font-size: 1.5vw; 
 }
 #navegacion{
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    height: 65px;
+  position: sticky;
+  top: 0;
+  height: 65px;
+  z-index: 1;
 }
 #navbar-brand {
-    display: none;
-    
+  display: none;
 }
 #navbar {
-    color: rgb(175, 175, 175);
-    transition: all 0.3s;
+  color: rgb(175, 175, 175);
+  transition: all 0.3s;
 }
 #navbar:hover {
-    color: rgba(255, 255, 255, 0.986);
-    transform: scale(1.1,1.1);
-    
+  color: rgba(255, 255, 255, 0.986);
+  transform: scale(1.1,1.1);
 }
 #nav-item {
-    color: rgb(175, 175, 175);
-    transition: all 0.3s;
+  color: rgb(175, 175, 175);
+  transition: all 0.3s;
 }
 #nav-item:hover{
-    color: rgb(255, 255, 255);
-    transform: scale(1.1,1.1);
-
+  color: rgb(255, 255, 255);
+  transform: scale(1.1,1.1);
 }
 
 .item-nav:hover {
-    background-color: rgb(22, 22, 22);
-    color: rgba(46, 190, 70, 0.815);
+  background-color: rgb(22, 22, 22);
+  color: rgba(46, 190, 70, 0.815);
 }
 #navbarNavAltMarkup{
-    display: flex;
-    justify-content:flex-end;
-    
+  display: flex;
+  justify-content:flex-end;
 }
 
 
 .main-container {
-        grid-template-columns:80% 20%;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:    "primeraseccion aside"
-                                "segundaseccion segundaseccion"
-                                "terceraseccion terceraseccion ";
-        height: 3300px;     
-        align-content: space-around;                                                              
-    }
+      grid-template-columns:80% 20%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:    "primeraseccion aside"
+                              "segundaseccion segundaseccion"
+                              "terceraseccion terceraseccion ";
+      height: 4200px;     
+      align-content: space-around;                                                              
+  }
 .primeraSeccion {
-        grid-area: primeraseccion;
-        justify-content: center;
-        align-items: center;
+      grid-area: primeraseccion;
+      justify-content: center;
+      align-items: center;
 }
 #aside {
-        grid-area: aside;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 0;
+      grid-area: aside;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;     
 }
 #cuenta {
-        height: 90%;
-        width: 90%;
-        flex-direction: column;
-        align-items: center;
+      height: 90%;
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
 }
 #descuento {
-        height: 100%;
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center
+      height: 100%;
+      width: 100%; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
 }
 .titulo-login {
-        text-align: center;
-        font-size: 36px;
-        margin: 20px;
+      text-align: center;
+      font-size: 36px;
+      margin: 20px;
 }
 .form-login{
-        height: 65%;
-        width: 95%;
-        padding: 20px;  
+      height: 65%;
+      width: 95%;
+      padding: 20px;  
 }
 .form-login label {
-    font-size: 25px;  
+  font-size: 25px;  
 }
 .form-login input{
-    width: 90%;
-    font-size: 1vw;
-    height: 50px;
+  width: 90%;
+  font-size: 1vw;
+  height: 50px;
 }
 .form-descuento{
-    height: 100%;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .form-descuento label{
-     padding: 10px;
-    width: 200px;
-    font-size: 1.2vw;
+   padding: 10px;
+  width: 90%;
+  font-size: 1.2vw;
 }
 .form-descuento input{
-        width: 100%;
-        font-size: 1vw;
+      width: 100%;
+      font-size: 1vw;
 }
 .titulo-descuento{
-        font-size: 25px;
-        padding: 10px;
+      font-size: 25px;
+      padding: 10px;
 }
 .contenedorKungfu {
-        width: 60%;
-        height: 100%;
+      width: 60%;
+      height: 100%;
 }
 .contenedorKungfu h2 {
-        font-size: 100px;
+      font-size: 100px;
+      padding: 20px;
+      margin: 10px;
 }
 .contenedorKungfu p{ 
-        padding: 15px;
-        font-size: 2vw;
+      padding: 15px;
+      font-size: 2vw;
 }
 .segundaSeccion {
-        width: 100%;
+      width: 100%;
+     height: 100%; 
 }
 .contenedor-objetivos {
-    width: 50%;   
+  width: 50%;   
 }
 .titulo-objetivos {
-    font-size: 35px;
-    margin: 10px; 
+  font-size: 35px;
+  margin: 10px; 
 }
 .ul-objetivos{
-    height: 80%;
-    margin: 15px;
-    padding:20px;   
+  height: 100%;
+  padding:20px;   
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 .contenedor-beneficios {
-     height: 100%;
-    padding: 20px;
-    width: 50%; 
-    justify-content: flex-end;
- }
+   height: 100%;
+  padding: 10px;
+  width: 50%; 
+}
 .titulo-beneficios{
-    font-size: 40px;
-    margin: 10px;
+  font-size: 40px;
+  margin: 10px;
 }
 .ul-beneficios{
-    height:83%;
-    padding: 15px;
+  height:90%;
+  padding: 15px;
 }
- 
+
 .terceraSeccion {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .titulo-tecnicas{
-        grid-area: titulo;
-        text-align: center;
+      grid-area: titulo;
+      text-align: center;
 }
 .titulo-tecnicas h3 {
-        font-size: 60px;
-        margin: 60px;   
+      font-size: 60px;
+      margin: 60px;   
 }
 .card-group {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    
+  height: 100%;
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 .card {
-    height: 80%;
-    width: 100%;
-    color: #080808;
+  height: 90%;
+  color: #080808;
 }
 
 #grulla{
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 }
 #tigre{
-    height: 50%;
-    width: 100%;
+  height: 50%;
+  width: 100%;
 }
 #serpiente{
-    height:50%;
-    width: 100%;
+  height:50%;
+  width: 100%;
 }
 .contenedor-tigre {
-        width: 90%;
-        height: 95%;
-        padding: 15px;  
+      width: 90%;
+      height: 100%;
+      padding: 15px;  
 }
 .fotoTigre{
-        height: 50%;
-        width: 100%; 
+      height: 50%;
+      width: 100%; 
 }
 .img-tigre{
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
 }
 .textoTigre h4 {
-        font-size: 3vw;
+      font-size: 3vw;
 }
 .textoTigre p {
-        font-size: 1.5vw;
+      font-size: 1.3vw;
 }
 .contenedor-grulla{
-     width: 90%;
-    height: 95%; 
+   width: 90%;
+  height: 95%; 
 }
 .img-grulla {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
 }
 .foto-grulla{ 
-        height: 50%;
-        width:100%;
+      height: 50%;
+      width:100%;
 }
 .texto-grulla h4 {
-        font-size: 2.5vw;
+      font-size: 2.5vw;
 }
 .texto-grulla p{
-        font-size: 1.5vw;
+      font-size: 1.5vw;
 
 
 }
 .contenedor-serpiente{
-    width: 90%;
-    height: 95%;
+  width: 90%;
+  height: 95%;
 }
 .foto-serpiente {
-        height: 50%;
-        width:100%;
+      height: 50%;
+      width:100%;
 }
 .img-serpiente{ 
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
 }
-   
+ 
 .texto-serpiente h4 {
-        font-size: 2.5vw;
+      font-size: 2.5vw;
 }
 .texto-serpiente p{
-        font-size: 1.7vw;
+      font-size: 1.7vw;
 }
 footer{
-    height: 120px;
+  height: 120px;
 }
 #copyright {
-    font-size: 20px;
+  font-size: 20px;
 }
 .li-footer {
-    font-size: 20px;
+  font-size: 20px;
 }
 .redesSociales {
-    font-size: 25px;
+  font-size: 25px;
 }
 .footer-contenedor {
-    height: 100%;
+  height: 100%;
 
 }
-    
   
-                                 /*seccion Contactos */
+
+                               /*seccion Contactos */
 .main-contactos {
-    height: 700px;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 50% 40%;
-    grid-template-areas:   "contacto crearcuenta"
-                            "contacto crearcuenta" ;
-    justify-items: center; 
-    align-items: flex-start;   
- }
+  height: 1000px;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 700px 300px;
+  grid-template-areas:   "contacto crearcuenta"
+                          "contacto crearcuenta" ;
+  justify-items: center; 
+  align-items: flex-start;   
+}
 .contenedor-mensaje div h4{
-     font-size: 50px;
+   font-size: 50px;
 }
 .contenedor-mensaje {
-        width: 60%;
-        border: 2px solid rgb(250, 250, 250);   
-        transform:translateY(40px) ; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100%;
-        padding: 30px;
- }
+      width: 60%;
+      border: 2px solid rgb(250, 250, 250);   
+      transform:translateY(40px) ; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 60%;
+      padding: 30px;
+}
 
-.ul-mensaje {
-    row-gap: 15px;
-    text-align: center;
-    height:400px ;
-    justify-content: center;
-}
-.ul-mensaje input{
-     font-size: 18px;  
-     margin-left: 20px;       
-}
- #textarea {
-        margin-left: 20px; 
-       width: 60%; 
-}
 .contenedor-cuenta{
-    height: 90%;
-    width: 60%;
-    border: 2px solid rgb(248, 248, 248); 
-    transform:translateY(20px) ;
-    padding: 20px;                            
- }
- .titulo-cuenta {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px;
+  height: 80%;
+  width: 60%;
+  border: 2px solid rgb(248, 248, 248); 
+  transform:translateY(20px) ;
+  padding: 10px;                            
+}
+.titulo-cuenta {
+  font-size: 3vw;
+  text-align: center;
+  margin: 10px;
 }
 .form-cuenta {
-    row-gap: 10px;  
-    height: 100%; 
+  row-gap: 15px;  
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .form-cuenta label {
-    width: 30%;
+  width: 30%;
 }
 .form-cuenta input {
-    width: 20vw;
- }
+  width: 20vw;
+}
 #enviar {
-   width: 90%;
+ width: 90%;
 }
 
 .input-cuenta {
- font-size: 20px;
+font-size: 20px;
 }
 #hombre {
-    transform: translateX(-8vw);
+  transform: translateX(-8vw);
 }
 #mujer {
-    transform: translateX(-8vw)
+  transform: translateX(-8vw)
 
 }
-                                             /* seccion galeria */
+                                           /* seccion galeria */
 .main-galeria  {
-    grid-template-columns:100%  ;
-    grid-template-rows:0.8fr 0.7fr;
-    grid-template-areas:"fotos"
-                        "videos" ;
-                        overflow-x: hidden;
+  grid-template-columns:100%  ;
+  grid-template-rows:0.8fr 0.7fr;
+  grid-template-areas:"fotos"
+                      "videos" ;
+  overflow-x: hidden;
 }                                            
 .contenedor-fotos {
-    grid-area:fotos;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  grid-area:fotos;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .titulo-fotos {
-    font-size: 50px;
-    margin: 30px;
+  font-size: 50px;
+  margin: 30px;
 }
 .contenedor-videos {
-    grid-area: videos;
-    display:flex;
-    flex-direction: column;
+  grid-area: videos;
+  display:flex;
+  flex-direction: column;
 }
 .carousel-inner {
-    transform: translateX(350px);
+  transform: translateX(350px);
 }
 .fotos {
-    height: 600px;
-    width: 60%;
+  height: 600px;
+  width: 60%;
 }
-
 .carousel-control-prev {
-    transform: translateX;
+  transform: translateX;
 }
 .carousel-control-next {
-    transform:translateX;
+  transform:translateX;
 }
 .titulo-videos {
-    margin: 30px;
+  margin: 30px;
 }
 .videos {
-    display: grid;
-    grid-template-columns:50% 50% ;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-areas:    "video1 video2"
-                            "video3 video4"
-                            "video5 video6";    
-     height: 1300px;     
-    row-gap: 20px;                     
+  display: grid;
+  grid-template-columns:50% 50% ;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas:    "video1 video2"
+                          "video3 video4"
+                          "video5 video6";    
+   height: 1300px;     
+  row-gap: 20px;                     
 }
-
-                                                    /* seccion historia   */
-  .contenedorHistoria {
-      grid-template-columns:50% 50% ;
-      grid-template-rows: 100%;
-      grid-template-areas: "historia famosos"
-    }
-    #seccionHistoria {
-        grid-area:historia ;
-        height: 100%;
-        width: 100%;
-    }
-    #seccionFamosos{
-        grid-area:famosos;
-        height: 100%;
-    }
-    .tituloHistoria h2{
-        font-size: 4vw;
-    }
+                                                  /* seccion historia   */
+.contenedorHistoria {
+    grid-template-columns:50% 50% ;
+    grid-template-rows: 100%;
+    grid-template-areas: "historia famosos"
+  }
+  #seccionHistoria {
+      grid-area:historia ;
+      height: 100%;
+      width: 100%;
+  }
+  #seccionFamosos{
+      grid-area:famosos;
+      height: 100%;
+  }
+  .tituloHistoria h2{
+      font-size: 4vw;
+  }
 .texto-historia{
-    height:100%;
-    width: 80%;
+  height:100%;
+  width: 80%;
 }
 .texto-historia p {
-       font-size:1.1vw ;
-       padding: 20px;
-   }
+     font-size:1.1vw ;
+     padding: 20px;
+ }
 .titulo-famosos {
-    text-align: center;
-    font-size: 60px;
-
-   }
+  text-align: center;
+  font-size: 60px;
+ }
 .titulo-ipman {
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 20px;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
 }
 .ip-man{
-       padding: 20px;
-       margin: 10px;
+     padding: 20px;
+     margin: 10px;
 }
 .titulo-bruce{ 
-    font-size: 40px;
-        text-align: center;
-        margin-bottom: 20px;
+  font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
 }
 .bruce-lee{ 
-       padding: 30px;
-       margin: 15px;
-   }
-   .foto-brucelee {
-       width: 50%;
-        height: 400px;
-   }
-   .img-bruce {
-       width: 100%;
-       height: 100%;
+     padding: 30px;
+     margin: 15px;
+ }
+ .foto-brucelee {
+     width: 50%;
+      height: 400px;
+ }
+ .img-bruce {
+     width: 100%;
+     height: 100%;
 } 
-                                            /*seccion taller*/
+                                          /*seccion taller*/
 
 #seccion-taller {
-        display:flex;
-        flex-direction: column;    
+      display:flex;
+      flex-direction: column;    
 }
 .contenedor-taller {
-
-        display: flex;
-    }
+      display: flex;
+  }
 .tituloTaller{ 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .contenedor-tablas {
-    width: 700px;
-    height: 400px;  
+  margin: 20px;  
 }
 .titulo-ubicacion {
-    font-size: 50px;
-    display: none;
+  font-size: 50px;
+  display: none;
+}
+tr ,td {
+  padding: 10px;
 }
 #ubicacion {
-    width: 700px;
-    height: 400px;
-    transform: translate(300px);
+  width: 700px;
+  height: 400px;
+  transform: translate(300px);
 }
 }
