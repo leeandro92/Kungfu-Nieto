@@ -1,0 +1,38 @@
+footer{ 
+    background-color: azure;
+    color: rgb(12, 11, 11);
+    .footer-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 15px;
+    div {
+        #copyright {
+            margin: 20px;
+          }          
+    }
+    .footer-contacto {
+        margin-top: 5px;
+      }  
+    .redes-sociales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+     }
+     .contenedor-redes {
+        display: flex;
+        column-gap: 30px;
+        i:hover {
+            transform: scale(1.5,1.5);
+            transition:all 1s; 
+      }
+      i {
+        color: #0f0f0f;
+      }
+  }
+  
+}
+ 
+  
+  
+ 

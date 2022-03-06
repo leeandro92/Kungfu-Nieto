@@ -1,0 +1,396 @@
+@import "_header.scss";
+@import"_mediaquery.scss";
+@import "_footer.scss";
+@import "_animaciones.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+   main {
+    .main-container {
+      display: grid;
+      background-color: rgb(11, 11, 14);
+      color: white;    
+        #primeraSeccion {
+          grid-area: primeraseccion;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+            .contenedorKungfu {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+                  h2 {
+                    text-align: center;
+                    margin: 30px;
+                  }
+                  p{ font-size: 18px;
+                    padding: 15px;
+                  }
+            }
+          }
+      #aside {
+        grid-area: aside;
+        display: flex;
+        color: white;
+        background-color: rgb(11, 11, 14);
+        
+        #cuenta {
+          display: flex;
+          flex-direction: column;
+          .titulo-login {
+            text-align: center;
+            font-size: 30px
+          }
+          .form-login{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 2px solid white;
+            .ingresar{
+              transition:all 0.2s ;
+            
+            }
+            .ingresar:hover {
+              background-color: #5c5d5f;
+              transform: scale(1,1);
+            }
+            label {
+              display: flex;
+              flex-direction: column;
+            }
+      }
+        }
+        #descuento {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .titulo-descuento {
+            animation-name: descuento;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+          .form-descuento{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 2px solid white;
+          }  
+        }
+      }
+      .segundaSeccion {
+        grid-area: segundaseccion;
+        display: flex;
+      .contenedor-objetivos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        div {
+          .titulo-objetivos {
+            text-align: center;
+            font-size: 35px;
+            margin: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+        }
+        .ul-objetivos{
+          display: flex;
+          justify-content: space-evenly;
+          height: 80%;
+          flex-direction: column;
+          margin: 15px;
+          padding:20px;
+          li {
+            list-style: none;
+          }
+        
+        }
+      }
+      .contenedor-beneficios {
+        display: flex;
+        flex-direction: column;
+       padding: 20px;
+        
+         div {
+          .titulo-beneficios{
+            text-align:  center;
+            font-size: 40px;
+            margin: 10px;
+          }
+         }
+         .ul-beneficios{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          li {
+            list-style: none;
+            }
+             
+          } 
+        }
+      }
+      .terceraSeccion {
+        grid-area: terceraseccion;
+         
+        .titulo-tecnicas{
+          grid-area: titulo;
+        }
+      }                        
+    }       
+  } 
+  
+   
+    
+    
+
+  
+  
+                                                                /* seccion contactos */
+  
+  .main-contactos {
+    display: grid;
+    background-color: rgb(11, 11, 14);
+    color: white; 
+  }
+  .titulo-mensaje{
+    text-align: center;
+    margin: 20px
+  }
+  #enviar:hover {
+    background-color: #8b8f97;
+    transition: 0.5s;
+  }
+  .contenedor-mensaje {
+    grid-area: contacto;
+  }
+  .contenedor-cuenta{ 
+    grid-area: crearcuenta;
+  }    
+  
+  
+                                                               /*Seccion galeria */
+  .main-galeria {
+    display: grid;
+    background-color: rgb(11, 11, 14);
+    color: white; 
+  }
+  .contenedor-fotos {
+    grid-area: fotos;
+  }
+  .contenedor-videos {
+    grid-area: videos;
+  }
+  .titulo-fotos {
+    text-align: center;
+  }
+  .imagenes {
+    display: grid;
+  }
+  .fotos {
+    height: 350px;
+    width: 90%;
+  }
+  .carousel-inner {
+    transform: translateX(20px);
+  }
+  .img-1 {
+  grid-area: foto1;
+  transition: all 0.5s;
+  
+  }
+  
+  .img-2{
+    grid-area: foto2;
+    transition: all 0.5s;
+  }
+  
+  .img-3 {
+    grid-area: foto3;
+    transition: all 0.5s;
+  }
+  
+  .img-4 {
+    grid-area: foto4;
+    transition: all 0.5s;
+  }
+  
+  .img-5 {
+    grid-area: foto5;
+    transition: all 0.5s;
+  }
+  
+  .img-6 {
+    grid-area: foto6;
+    transition: all 0.5s;
+  }
+  
+  .titulo-videos {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 10px;
+  }
+  .videos{ 
+    display: grid;
+  }
+  .video1 {
+    grid-area: video1;
+    transition: all 0.5s;
+    width: 90%;
+    height: 90%;
+  }
+  .video1:hover {
+    width: 100%;
+    height: 100%;
+  }
+  .video2 {
+    grid-area: video2;
+    transition: all 0.5s;
+    width: 90%;
+    height: 90%;
+  }
+  .video2:hover {
+    transform: scale( 1.1,1.1)
+  }
+  .video3 {
+    grid-area: video3;
+    transition: all 0.5s;
+    width: 90%;
+    height: 90%;
+  }
+  .video3:hover {
+    transform: scale(1.2,1.2)
+  }
+  .video4 {
+    grid-area: video4;
+    transition: all 0.5s;
+    width: 90%;
+    height: 90%;
+  }
+  .video4:hover{ 
+    transform: translateX(-30px) scale( 1.1,1.1)
+  }
+  .video5 {
+    grid-area: video5;
+    transition: all 0.5s;
+    width: 90%;
+    height: 90%;
+  }
+  .video5:hover {
+    transform: scale(1.2,1.2)
+  }
+  .video6 {
+    grid-area: video6;
+    transition: all 0.5s;
+    width: 90%;
+    height: 90%;
+  }
+  .video6:hover {
+    transform: translateX(-30px) scale( 1.1,1.1)
+  }
+                                                      /* seccion historia */
+  .contenedorHistoria {
+    display:grid;
+    background-color: rgb(11, 11, 14);
+    color: white; 
+  }
+  #seccionHistoria {
+    grid-area:historia ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+    #seccionFamosos{
+        grid-area:famosos;
+  }
+  .tituloHistoria h2{
+    text-align: center;
+  }
+  .texto-historia{
+    display: flex;
+    justify-content: center;
+  }
+  .ipman-foto {
+    animation-name:ipman ;
+    animation-duration:15s ;
+    animation-iteration-count:infinite ;
+    height: 400px;
+    width: 900px;
+  }
+  @keyframes ipman {
+    0% {
+        background-image: url(../fotos/ipman.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;    
+    }
+    50% {
+        background-image: url(../fotos/ipman2.jpg) ;
+        background-repeat: no-repeat;
+        background-size: contain;  
+    }
+    100% {
+        background-image: url(../fotos/ipman3.jpeg) ;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+  }
+  .bruce-lee{ 
+       display: flex;
+       flex-direction: column;
+   }
+  .foto-brucelee {
+       width: 50%;
+        height: 400px;
+   }
+  .img-bruce {
+       width: 100%;
+       height: 100%;
+  } 
+                                            /*seccion taller*/
+  
+  #seccion-taller {
+        display:flex;
+        flex-direction: column; 
+        background-color: rgb(11, 11, 14);
+        color: white;   
+        height: 100%;
+  }
+  .tabla-item th {
+    border: 1px solid white;
+  }
+  .tabla-item {
+    border: 1px solid white;
+  }
+  .tabla-item td {
+    border: 1px solid white;
+  }
+  .tituloTaller{ 
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-tablas {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+  }
+  .titulo-ubicacion {
+    text-align: center;
+    display: none;
+  }
+  #ubicacion {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+        
+  
+  
+                                

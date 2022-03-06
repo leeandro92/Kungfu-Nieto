@@ -1,0 +1,929 @@
+                                                    
+ @import "_animaciones.scss";
+ @import "_variables.scss";                                                 
+                                                   /*ESCRITORIO -INDEX*/
+
+
+ @media only screen and (min-width:992px) {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+nav{
+  #navegacion{
+  position: sticky;
+  top: 0;
+  height: 65px;
+  z-index: 1;
+  }
+  #navbar-brand {
+  display: none;
+  }
+  #navbar {
+  color: $colorDeNav;
+  transition: all 0.3s;
+   }
+   #navbar:hover {
+   color: rgba(255, 255, 255, 0.986);
+    transform: scale(1.1,1.1);
+    }
+          #nav-item {
+            color: $colorDeNav;
+            transition: all 0.3s;
+            font-size: 22px;
+          }
+          #nav-item:hover{
+            color: rgb(255, 255, 255);
+            transform: scale(1.1,1.1);
+          } 
+          
+          #navbarNavAltMarkup{
+            display: flex;
+            justify-content:flex-end;
+          }
+     } 
+     
+      
+main{
+    .main-container {
+      grid-template-columns:80% 20%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:    "primeraseccion aside"
+                              "segundaseccion segundaseccion"
+                               "terceraseccion terceraseccion ";
+      height: 4200px;     
+      align-content: space-around;
+        #primeraSeccion {
+            grid-area: primeraseccion;
+            justify-content: center;
+            align-items: center;
+            .contenedorKungfu {
+              width: 60%;
+              height: 100%;
+              h2 {
+                font-size: 90px;
+                padding: 20px;
+                margin: 10px;
+              }
+                p{ 
+                  padding: 18px;
+                  font-size: 22px;
+                  letter-spacing: 2px;
+                  width: 80%;
+                }
+         
+            }
+          }
+        #aside {
+          grid-area: aside;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+           #cuenta {
+                height: 90%;
+                width: 90%;
+                flex-direction: column;
+                align-items: center;
+                  div {
+                   .titulo-login {
+                    text-align: center;
+                    font-size: 36px;
+                    margin: 20px; 
+                    }
+                  }
+                .form-login{
+                  height: 65%;
+                  width: 95%;
+                  padding: 20px;
+                  .form-login label {
+                    font-size: 20px; 
+                    .form-login input{
+                      width: 90%;
+                      font-size: 1vw;
+                      height: 50px;
+                    } 
+                  }  
+                } 
+            }
+            #descuento {
+                height: 100%;
+                width: 100%; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                  div {
+                      .titulo-descuento{
+                        font-size: 25px;
+                        padding: 10px;
+                        }
+                  }  
+                .form-descuento{
+                  height: 100%;
+                  width: 95%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                    label{
+                      padding: 10px;
+                    width: 90%;
+                    font-size: 1.2vw;
+                     }
+                    input{
+                    width: 90%;
+                    font-size: 1vw;
+                    }
+                }
+              }    
+            } 
+            .segundaSeccion {
+              width: 100%;
+             height: 100%; 
+              .contenedor-objetivos {
+                width: 50%;   
+                div {
+                    .titulo-objetivos {
+                    font-size: 785px;
+                    margin: 10px; 
+                    }
+                } 
+              .ul-objetivos{
+                height: 100%;
+                padding:20px;
+                li {
+                  list-style: none;
+                  font-size: 22px;
+                }   
+              }   
+            }
+            .contenedor-beneficios {
+              height: 100%;
+              padding: 10px;
+              width: 50%; 
+            div {
+              .titulo-beneficios{
+                font-size: 40px;
+                margin: 10px;
+              }
+            } 
+            .ul-beneficios{
+              height:75%;
+              padding: 15px;
+              li {
+                font-size: 22px;
+              }
+            }
+          } 
+        } 
+        .terceraSeccion {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          .titulo-tecnicas{
+            grid-area: titulo;
+            text-align: center;
+            h3 {
+              font-size: 60px;
+              margin: 60px;   
+            }
+        }
+        .card-group {
+          height: 100%;
+          width: 98%;
+          display: flex;
+          justify-content: space-evenly;
+          .card {
+            height: 90%;
+            color: #080808;
+            #grulla{
+              height: 50%;
+              width: 100%;
+            }
+            #tigre{
+              height: 50%;
+              width: 100%;
+            }
+            #serpiente{
+              height:50%;
+              width: 100%;
+            }
+          
+          }
+        }
+      }                                                                   
+    }         
+  } 
+     
+footer{
+  height:120px;
+    li{
+      list-style: none;
+    }
+  .footer-contenedor {
+    height: 100%;
+    div {
+      #copyright {
+        font-size: 20px;
+      }
+    }
+  }
+    ul {
+      .li-footer {
+        font-size: 20px;
+      }
+    }
+      .redes-sociales{
+          div {
+            .redesSociales {
+               font-size: 25px;
+            }
+          }
+      }  
+  }
+      
+     
+      
+      
+     
+       /*seccion Contactos */
+  .main-contactos {
+    height: 1000px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 700px 300px;
+    grid-template-areas:   "contacto crearcuenta"
+                            "contacto crearcuenta" ;
+    justify-items: center; 
+    align-items: flex-start;   
+  }
+  .contenedor-mensaje div h4{
+     font-size: 50px;
+  }
+  .contenedor-mensaje {
+        width: 60%;
+        border: 2px solid rgb(250, 250, 250);   
+        transform:translateY(40px) ; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 60%;
+        padding: 30px;
+  }
+  
+  .contenedor-cuenta{
+    height: 80%;
+    width: 60%;
+    border: 2px solid rgb(248, 248, 248); 
+    transform:translateY(20px) ;
+    padding: 10px;                            
+  }
+  .titulo-cuenta {
+    font-size: 3vw;
+    text-align: center;
+    margin: 10px;
+  }
+  .form-cuenta {
+    row-gap: 15px;  
+    height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .form-cuenta label {
+    width: 30%;
+  }
+  .form-cuenta input {
+    width: 20vw;
+  }
+  #enviar {
+   width: 90%;
+  }
+  
+  .input-cuenta {
+  font-size: 20px;
+  }
+  #hombre {
+    transform: translateX(-8vw);
+  }
+  #mujer {
+    transform: translateX(-8vw)
+  
+  }
+                                             /* seccion galeria */
+  .main-galeria  {
+    grid-template-columns:100%  ;
+    grid-template-rows:0.8fr 0.7fr;
+    grid-template-areas:"fotos"
+                        "videos" ;
+    overflow-x: hidden;
+  }                                            
+  .contenedor-fotos {
+    grid-area:fotos;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .titulo-fotos {
+    font-size: 50px;
+    margin: 30px;
+  }
+  .contenedor-videos {
+    grid-area: videos;
+    display:flex;
+    flex-direction: column;
+  }
+  .carousel-inner {
+    transform: translateX(350px);
+  }
+  .fotos {
+    height: 600px;
+    width: 60%;
+  }
+  .carousel-control-prev {
+    transform: translateX;
+  }
+  .carousel-control-next {
+    transform:translateX;
+  }
+  .titulo-videos {
+    margin: 30px;
+  }
+  .videos {
+    display: grid;
+    grid-template-columns:50% 50% ;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:    "video1 video2"
+                            "video3 video4"
+                            "video5 video6";    
+     height: 1300px;     
+    row-gap: 20px;                     
+  }
+                                                    /* seccion historia   */
+  .contenedorHistoria {
+      grid-template-columns:50% 50% ;
+      grid-template-rows: 100%;
+      grid-template-areas: "historia famosos"
+    }
+    #seccionHistoria {
+        grid-area:historia ;
+        height: 100%;
+        width: 100%;
+    }
+    #seccionFamosos{
+        grid-area:famosos;
+        height: 100%;
+    }
+    .tituloHistoria h2{
+        font-size: 4vw;
+    }
+  .texto-historia{
+    height:100%;
+    width: 80%;
+  }
+  .texto-historia p {
+       font-size:1.1vw ;
+       padding: 20px;
+   }
+  .titulo-famosos {
+    text-align: center;
+    font-size: 60px;
+   }
+  .titulo-ipman {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+  }
+  .ip-man{
+       padding: 20px;
+       margin: 10px;
+  }
+  .titulo-bruce{ 
+    font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+  }
+  .bruce-lee{ 
+       padding: 30px;
+       margin: 15px;
+   }
+   .foto-brucelee {
+       width: 50%;
+        height: 400px;
+   }
+   .img-bruce {
+       width: 100%;
+       height: 100%;
+  } 
+                                            /*seccion taller*/
+  
+  #seccion-taller {
+        display:flex;
+        flex-direction: column;    
+  }
+  .contenedor-taller {
+        display: flex;
+    }
+  .tituloTaller{ 
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-tablas {
+    margin: 20px;  
+  }
+  .titulo-ubicacion {
+    font-size: 50px;
+    display: none;
+  }
+  tr ,td {
+    padding: 10px;
+  }
+  #ubicacion {
+    width: 700px;
+    height: 400px;
+    transform: translate(300px);
+  }
+  
+
+
+}
+
+
+
+
+                                                             /* VERSION MOBILE*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+  Header{
+      height: 150px;
+        .img-header {
+          animation-name:movimiento  ;
+          animation-duration: 1.5s;
+        }
+  }
+  
+  nav {
+    #navbar{
+      display: none;
+    }
+    .nav-container {
+      row-gap: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .nav-container li {
+       font-size: 20px;
+      justify-content: center; 
+    }
+    .nav-container a {
+      width: 90%;
+    }
+  }
+  main {
+    .main-container {
+      grid-template-columns:100%;
+      grid-template-rows: 0.3fr 0.5fr 0.7fr 0.5fr;
+      grid-template-areas:    "primeraseccion"
+                              "segundaseccion" 
+                              "terceraseccion"
+                              "aside";
+      #primeraSeccion{ 
+        grid-area: primeraseccion;
+         height: 100%;
+         .contenedorKungfu{ 
+          height: 75%;
+          width: 95%;
+          justify-content: space-evenly;
+          h2 {
+            font-size: 40px;
+            margin-top: 20px;
+          }
+        } 
+      }
+      .segundaSeccion {
+        grid-area: segundaseccion;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        .contenedor-objetivos {
+          width: 100%;
+          height: 1200px;
+        }
+        .contenedor-beneficios {
+         width: 90%;
+         height: 80%;
+          div {
+              h3 {
+                height: 42px;
+              }
+          }
+          .ul-beneficios {
+              height: 80%;
+            display: flex;
+            flex-direction: column;  
+          }
+        }
+      } 
+      .terceraSeccion {
+        grid-area: terceraseccion;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        .titulo-tecnicas {
+          h3 {
+            font-size: 9vw;
+            text-align: center;
+            margin: 30px;
+          }
+        } 
+        .card-group {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .card {
+            height: 80%;
+            width: 100%;
+            color: #fdfdfd;
+            #tigre{
+              height: 50%;
+              width: 100%;
+            }
+            .card-body {
+              background-color: rgb(11, 11, 14);
+            }
+            #grulla{
+              height: 50%;
+              width: 100%;
+            }
+            #serpiente{
+              height:50%;
+              width: 100%;
+            }
+          }
+        }     
+      }
+      #aside {
+        grid-area: aside;
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(11, 11, 14);
+        color: black;
+        #cuenta {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 2px solid black;
+          background-color: rgb(11, 11, 14);
+          color: white; 
+        div{
+          .titulo-login {
+            text-align: center;
+            font-size: 36px;
+            margin: 20px;
+          }
+  
+        }
+        .form-login {
+          display: flex;
+          height: 80%;
+          width: 70%;
+            label {
+                height: 100%;
+                width: 95%;
+                display: flex;
+                font-size: 25px;
+                margin: 10px;
+                flex-direction: column;
+                input{
+                  width: 200px;
+                  font-size: 20px;
+                }
+            }
+            .ingresar {
+              margin-left: 10px;
+              margin-bottom: 10px;
+            }
+        }
+        }
+        #descuento {
+          height: 50%;
+          width: 100%; 
+          display: flex;
+          flex-direction: column;
+          border: 2px solid black;
+          background-color: rgb(11, 11, 14);
+          color: white;
+          div {
+            .titulo-descuento{
+              font-size: 33px;
+              padding: 10px;
+              margin: 20px;
+          }
+  
+          } 
+          .form-descuento{
+            height: 85%;
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            label{
+              margin-left: 30px;
+            padding: 10px;
+            width: 230px;
+              input{
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+                             
+    }
+  }
+  footer {
+    .footer-contenedor {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      .footer-contacto {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      li{
+        list-style: none;
+      } 
+    }
+  }
+  
+  
+  
+  
+  
+                                                        /* seccion contactos*/
+  .main-contactos {
+    grid-template-columns:1fr ;
+    grid-template-rows:  40% 50% ;
+    grid-template-areas:"contacto"
+                        "crearcuenta"
+                        ;
+             height: 1200px;          
+  }
+  .contenedor-mensaje h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .contenedor-mensaje {
+    margin: 10px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  .contenedor-mensaje div {
+    padding: 10px;
+  }
+  input {
+    width: 70%;
+    border: 1px solid black;
+  }
+  textarea {
+    width: 70%;
+    height: 15vw;
+  }
+  .contenedor-cuenta h4{
+    font-size: 20px;
+    padding: 5px;
+    text-align:center;
+  }
+  .contenedor-cuenta {
+    height:100% ;
+    margin: 10px;
+    border: 1px solid white;
+    
+  
+  }
+  .form-cuenta {
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-evenly; 
+   height: 70%;
+   align-items: center;
+   width: 100%;
+  }
+  
+  .form-cuenta label {
+    font-size: 15px;
+  }
+  
+                                                                    /*Seccion galeria */
+  
+  .main-galeria {
+    grid-template-columns:1fr ;
+    grid-template-rows:20% 70% ;
+    grid-template-areas:    "fotos"
+                            "videos"   ;
+  }
+  .contenedor-fotos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .titulo-fotos {
+    text-align: center;
+    font-size: 40px;
+  }
+  .imagenes{
+    
+    grid-template-columns:90% ;
+    grid-template-rows: 200px 300px 300px 300px 300px 290px;
+    grid-template-areas:    "foto1"
+                            "foto2"
+                            "foto3"
+                            "foto4"
+                            "foto5"
+                            "foto6";
+    justify-items: center;
+    row-gap: 15px;
+  }
+  .imagenes img {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor-videos{
+    display: flex;
+    flex-direction: column;
+  }
+  .videos{ 
+    height:2400px ;
+    grid-template-columns:90% ;
+    grid-template-rows:300px 300px 300px 300px 300px 300px ;
+    grid-template-areas:    "video1"
+                            "video2"
+                            "video3"
+                            "video4"
+                            "video5"
+                            "video6";
+    align-content: space-evenly;
+    justify-content: center;
+  }
+  .videos div {
+    width: 100%;
+    height: 100%;
+  }
+  .titulo-videos {
+    font-size: 6.5vw;
+  }
+  
+                                           /* seccion historia */
+  .contenedorHistoria{
+    height:100% ;
+    grid-template-columns:100% ;
+    grid-template-rows:0.8fr 0.8fr;
+    grid-template-areas:"seccion1 " 
+                        "seccion2";
+  justify-items: center;
+  align-content: space-evenly;              
+  }    
+  
+  #seccionHistoria{ 
+    grid-area: seccion1;
+    width:95% ;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .tituloHistoria {
+    display: flex;
+    justify-content: center;
+  }
+  .texto-historia {
+    padding: 10px; 
+  }
+  
+  #seccionFamosos{
+    grid-area: seccion2;
+    width:95% ;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .titulo-famosos {
+    font-size: 30px;
+    text-align: center;
+    margin: 15px;
+  }
+  
+  .ipman-foto {
+    height: 350px;
+    width: 90%;
+    animation-name: ipman-mobile;
+    animation-duration:15s ;
+    animation-iteration-count: infinite;
+  }
+  .foto_ipman img {
+    width: 90%;
+    height: 90%;
+  }
+  .titulo-ipman{
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+  }
+  .titulo-bruce {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+  }
+  .foto-brucelee{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .foto-brucelee img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .img-brucelee {
+    width: 90%;
+    height: 50%;
+  }
+  
+  @keyframes ipman-mobile {
+    0% {
+        background-image: url(../fotos/ipman.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     25% {
+    background-image: url(../fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }    
+    
+    40% {
+        background-image: url(../fotos/ipman2.jpg) ;
+        background-size: cover;  
+    }
+    100% {
+        background-image: url(../fotos/ipman3.jpeg) ;
+        background-size: cover;   
+    }
+  }
+  
+  
+                                                    /*seccion taller*/
+  #seccion-taller {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+  }
+  .tituloTaller h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  .contenedor-tablas{
+    height: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    
+  }
+  tr,td {
+    padding: 2px;
+  }
+  #tabla {
+    margin: 10px;
+  }
+  #ubicacion{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .titulo-ubicacion {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  }
