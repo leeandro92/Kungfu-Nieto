@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Escuela de kung fu shaolin,Kung fu tradicional,artes marciales chinas">
+    <meta name="description" content="Xiang feng,es una escuela dedicada al entrenamiento y concentración para transmitir valores y enseñanzas del kung fu.">
     <link rel="stylesheet" href="sass/css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
-    <title>Xiang Feng</title>
+    <title>Xiang feng - Inicio</title>
+    
     <script src="https://kit.fontawesome.com/c4c655a3f6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -22,7 +25,7 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navegacion">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" id="navbar-brand">Inicio</a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,13 +40,15 @@
         </div>
       </div>
     </nav>  
-    <main>
-      <div class="main-container">
+    <main class="main-container">
        <!--Primera seccion del index-->
         <section class="container-fluid" id="primeraSeccion">
          <article class="contenedorKungfu"> 
               <h2>¿Que es el kung fu?</h2>
-              <p> El Kung Fu es un arte marcial de origen chino que se caracteriza por tener un caracter no violento con una base filosofica. para buscar la concentracion y el control de la energia. Es quizás una de las artes marciales más conocidas, porque muchas películas incorporan sus técnicas.puede describirse en nuestro idioma como Trabajo Continuo a través del tiempo, y también como Sabiduría y Maestría, y un saber Maestro es pragmático y es coherente, no se queda en la teoría, es aquel enriquecido con la experiencia y que se aplica a la vida diaria, exige una Continuidad y una Ética entre el decir, el sentir y el hacer. Estas son quizás las traducciones más coherentes y fieles. En China existen aproximadamente más de 36O estilos duros de lucha, poco más de 1O estilos blandos, y técnicas de armas, que conforman las llamadas Artes Marciales Chinas; en occidente, se globalizó la denominación de todos esos diferentes estilos en la palabra Kung Fu.En el kung fu existen diferentes estilos, algunas fuentes afirman que son más de 350 estilos oficiales reconocidos por el Gobierno chino. Cada estilo posee elementos de acondicionamiento físico, técnicas y tácticas distintas</p>   
+              <p> El Kung Fu es un arte marcial de origen chino que se caracteriza por tener un caracter no violento con una base filosofica. para buscar la concentracion y el control de la energia. Es quizás una de las artes marciales más conocidas, porque muchas películas incorporan sus técnicas.puede describirse en nuestro idioma como Trabajo Continuo a través del tiempo, y también como Sabiduría y Maestría, y un saber Maestro es pragmático y es coherente, no se queda en la teoría, es aquel enriquecido con la experiencia y que se aplica a la vida diaria, exige una Continuidad y una Ética entre el decir, el sentir y el hacer. Estas son quizás las traducciones más coherentes y fieles. En China existen aproximadamente más de 36O estilos duros de lucha, poco más de 1O estilos blandos, y técnicas de armas, que conforman las llamadas Artes Marciales Chinas; en occidente, se globalizó la denominación de todos esos diferentes estilos en la palabra Kung Fu.En el kung fu existen diferentes estilos, algunas fuentes afirman que son más de 350 estilos oficiales reconocidos por el Gobierno chino. Cada estilo posee elementos de acondicionamiento físico, técnicas y tácticas distintas</p>
+              <div class="container">
+                <img src="fotos/bubishi.png" alt="bubishi">
+              </div>   
          </article>
        </section>
        <!--Fin de primera seccion -->
@@ -52,7 +57,7 @@
          <!--Iniciar sesion -->
          <div id="cuenta">
              <div>
-               <h4 class="titulo-login">Iniciar sesion</h4>                                   
+               <h3 class="titulo-login">Iniciar sesion</h3>                                   
             </div>
             <form class="form-login">
                 <label for="log-usuario">Usuario: <input type="text" id="log-usuario"> </label>
@@ -63,13 +68,13 @@
            <!--Descuentos -->
            <div id="descuento">                                               
             <div>
-              <h4 class="titulo-descuento">¡No te pierdas nuestros descuentos con 20% OFF en tu matricula!</h4>
+              <h3 class="titulo-descuento">¡No te pierdas nuestros descuentos con 20% OFF en tu matricula!</h3>
             </div>
             <form class="form-descuento">
               <label for="nombre-descuentos">Nombre y Apellido<input type="text" id="nombre-descuentos"></label> 
               <label for="email-descuentos"> Email<input type="email" id="email-descuentos"> </label> 
               <label for="cumpleaños-descuentos">Cumpleaños (dd/mm) <input type="date" id="cumpleaños-descuentos"></label> 
-              <input type="submit" value="Enviar">
+              <input type="submit" value="Enviar" class="btnEnviar">
             </form>
           </div>
        </aside>
@@ -110,7 +115,7 @@
        <!--Tercera seccion del index-->
        <section class="terceraSeccion">
           <div class="titulo-tecnicas">
-            <h3>Sistema tecnico de pelea</h3>
+            <h4>Sistema tecnico de pelea</h4>
           </div>
           <div class="card-group">
             <div class="card">
@@ -121,14 +126,14 @@
               </div>
             </div>
             <div class="card">
-              <img src="fotos/grulla2.jpg" class="card-img-top" alt="Grulla kungfu" id="grulla">
+              <img src="fotos/grulla2.png" class="card-img-top" alt="Grulla kungfu" id="grulla">
               <div class="card-body">
                 <h5 class="card-title">Forma de Grulla</h5>
                 <p class="card-text">El estilo de kung fu,conocido como "grulla" es famoso por su postura, en la que te colocas sobre una pierna y abres los brazos como una grulla que despliega sus alas.Esta tecnica se usa mas a menudo en el combate para bloquear y golpear al adversario con la presion de los dedos hacia un punto en especifico.</p>
               </div>
             </div>
             <div class="card">
-              <img src="fotos/serpiente.jpg" class="card-img-top" alt="Serpiente kungfu" id="serpiente">
+              <img src="fotos/serpiente.png" class="card-img-top" alt="Serpiente kungfu" id="serpiente">
               <div class="card-body">
                 <h5 class="card-title">Forma de Serpiente</h5>
                 <p class="card-text">Posee la concentración y ligereza de la Grulla, además, sus movimientos tienen gran velocidad y determinación como el Tigre, sus desplazamientos son circulares y tiene muchas técnicas de agarres y palancas.El origen exacto de este Estilo de Kung Fu es incierto pero surgió dentro del Templo Shaolin de la pura imitación al igual que todos los Estilos de los animales.</p>
@@ -137,7 +142,6 @@
           </div>  
        </section>
        <!-- Fin de tercera seccion -->
-      </div>
     </main>
     <footer>
       <div class="footer-contenedor">
@@ -151,7 +155,7 @@
         </ul>
         <div class="redes-sociales">
           <div>
-            <h5 class="redesSociales">Seguinos en nuestras redes</h5>
+            <h6 class="redesSociales">Seguinos en nuestras redes</h6>
           </div>
           <ul class="contenedor-redes">
             <a href="https://instagram.com" target="_blank"><li><i class="fab fa-instagram"></i></li></a> 
@@ -163,7 +167,6 @@
     </footer>
 </body>
 </html>
-
 
 
 

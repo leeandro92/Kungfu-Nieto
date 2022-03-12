@@ -1,0 +1,5 @@
+@mixin titulo( $altoLetra, $margenTit, $paddingTit) {  
+    font-size: $altoLetra;
+    margin: $margenTit;
+    padding: $paddingTit;
+}

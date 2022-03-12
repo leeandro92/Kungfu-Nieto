@@ -20,6 +20,7 @@ Header {
     animation-duration: 0.7s;
     margin: 30px; }
 
+/*ESCRITORIO -INDEX*/
 @keyframes movimiento {
   0% {
     transform: translateY(-150px); }
@@ -46,7 +47,36 @@ Header {
     background-color: #fdfdfd;
     color: black; } }
 
-/*ESCRITORIO -INDEX*/
+@keyframes ipman {
+  0% {
+    background-image: url(../../fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  50% {
+    background-image: url(../../fotos/ipman2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  100% {
+    background-image: url(../../fotos/ipman3.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain; } }
+
+@keyframes ipman-mobile {
+  0% {
+    background-image: url(/fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  25% {
+    background-image: url(/fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  40% {
+    background-image: url(/fotos/ipman2.jpg);
+    background-size: contain; }
+  100% {
+    background-image: url(/fotos/ipman3.jpeg);
+    background-size: 100px; } }
+
 @media only screen and (min-width: 992px) {
   * {
     margin: 0;
@@ -61,7 +91,9 @@ Header {
     display: none; }
   nav #navbar {
     color: #afafaf;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    font-size: 24px;
+    margin-top: 2px; }
   nav #navbar:hover {
     color: rgba(255, 255, 255, 0.986);
     transform: scale(1.1, 1.1); }
@@ -75,132 +107,149 @@ Header {
   nav #navbarNavAltMarkup {
     display: flex;
     justify-content: flex-end; }
-  main .main-container {
+  .main-container {
     grid-template-columns: 80% 20%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 01fr;
     grid-template-areas: "primeraseccion aside" "segundaseccion segundaseccion" "terceraseccion terceraseccion ";
-    height: 4200px;
-    align-content: space-around; }
-    main .main-container #primeraSeccion {
+    height: 4000px;
+    align-content: space-evenly; }
+    .main-container #primeraSeccion {
       grid-area: primeraseccion;
-      justify-content: center;
       align-items: center; }
-      main .main-container #primeraSeccion .contenedorKungfu {
-        width: 60%;
-        height: 100%; }
-        main .main-container #primeraSeccion .contenedorKungfu h2 {
-          font-size: 90px;
-          padding: 20px;
-          margin: 10px; }
-        main .main-container #primeraSeccion .contenedorKungfu p {
-          padding: 18px;
+      .main-container #primeraSeccion .contenedorKungfu {
+        width: 70%;
+        height: 90%;
+        margin: 20px; }
+        .main-container #primeraSeccion .contenedorKungfu h2 {
+          font-size: 60px;
+          margin: 30px;
+          padding: 20px; }
+        .main-container #primeraSeccion .contenedorKungfu p {
+          padding: 30px;
           font-size: 22px;
           letter-spacing: 2px;
-          width: 80%; }
-    main .main-container #aside {
+          width: 90%;
+          margin: 30px; }
+        .main-container #primeraSeccion .contenedorKungfu div {
+          height: 40%;
+          width: 50%;
+          border-radius: 60%; }
+    .main-container #aside {
       grid-area: aside;
-      height: 100%;
+      height: 1200px;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      align-items: center; }
-      main .main-container #aside #cuenta {
-        height: 90%;
+      align-items: center;
+      padding: 20px; }
+      .main-container #aside #cuenta {
+        height: 70%;
         width: 90%;
-        flex-direction: column;
-        align-items: center; }
-        main .main-container #aside #cuenta div .titulo-login {
+        align-items: center;
+        margin: 20px; }
+        .main-container #aside #cuenta div .titulo-login {
           text-align: center;
           font-size: 36px;
           margin: 20px; }
-        main .main-container #aside #cuenta .form-login {
+        .main-container #aside #cuenta .form-login {
           height: 65%;
           width: 95%;
           padding: 20px; }
-          main .main-container #aside #cuenta .form-login .form-login label {
+          .main-container #aside #cuenta .form-login .form-login label {
             font-size: 20px; }
-            main .main-container #aside #cuenta .form-login .form-login label .form-login input {
+            .main-container #aside #cuenta .form-login .form-login label .form-login input {
               width: 90%;
               font-size: 1vw;
               height: 50px; }
-      main .main-container #aside #descuento {
+      .main-container #aside #descuento {
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center; }
-        main .main-container #aside #descuento div .titulo-descuento {
+        .main-container #aside #descuento div .titulo-descuento {
           font-size: 25px;
           padding: 10px; }
-        main .main-container #aside #descuento .form-descuento {
+        .main-container #aside #descuento .form-descuento {
           height: 100%;
           width: 95%;
           display: flex;
           flex-direction: column;
           justify-content: space-around; }
-          main .main-container #aside #descuento .form-descuento label {
+          .main-container #aside #descuento .form-descuento label {
             padding: 10px;
             width: 90%;
-            font-size: 1.2vw; }
-          main .main-container #aside #descuento .form-descuento input {
+            font-size: 20px;
+            margin-left: 30px; }
+          .main-container #aside #descuento .form-descuento input {
             width: 90%;
             font-size: 1vw; }
-    main .main-container .segundaSeccion {
+          .main-container #aside #descuento .form-descuento .btnEnviar {
+            margin-left: 50px;
+            width: 60%;
+            transition: 0.7s; }
+          .main-container #aside #descuento .form-descuento .btnEnviar:hover {
+            background-color: #5c5d5f; }
+    .main-container .segundaSeccion {
       width: 100%;
-      height: 100%; }
-      main .main-container .segundaSeccion .contenedor-objetivos {
-        width: 50%; }
-        main .main-container .segundaSeccion .contenedor-objetivos div .titulo-objetivos {
-          font-size: 785px;
-          margin: 10px; }
-        main .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
-          height: 100%;
-          padding: 20px; }
-          main .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
-            list-style: none;
-            font-size: 22px; }
-      main .main-container .segundaSeccion .contenedor-beneficios {
-        height: 100%;
+      height: 100%;
+      margin-top: 200px; }
+      .main-container .segundaSeccion .contenedor-objetivos {
+        width: 50%;
+        height: 80%; }
+        .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
+          height: 90%;
+          padding: 10px;
+          margin: 20px; }
+          .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
+            font-size: 18px; }
+      .main-container .segundaSeccion .contenedor-beneficios {
+        height: 80%;
         padding: 10px;
         width: 50%; }
-        main .main-container .segundaSeccion .contenedor-beneficios div .titulo-beneficios {
+        .main-container .segundaSeccion .contenedor-beneficios div .titulo-beneficios {
           font-size: 40px;
           margin: 10px; }
-        main .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
-          height: 75%;
+        .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
+          height: 100%;
           padding: 15px; }
-          main .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
-            font-size: 22px; }
-    main .main-container .terceraSeccion {
+          .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
+            font-size: 18px; }
+    .main-container .terceraSeccion {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%; }
-      main .main-container .terceraSeccion .titulo-tecnicas {
+      .main-container .terceraSeccion .titulo-tecnicas {
         grid-area: titulo;
         text-align: center; }
-        main .main-container .terceraSeccion .titulo-tecnicas h3 {
+        .main-container .terceraSeccion .titulo-tecnicas h4 {
           font-size: 60px;
-          margin: 60px; }
-      main .main-container .terceraSeccion .card-group {
+          margin: 40px;
+          padding: 20px; }
+      .main-container .terceraSeccion .card-group {
         height: 100%;
-        width: 98%;
+        width: 90%;
         display: flex;
         justify-content: space-evenly; }
-        main .main-container .terceraSeccion .card-group .card {
-          height: 90%;
-          color: #080808; }
-          main .main-container .terceraSeccion .card-group .card #grulla {
-            height: 50%;
-            width: 100%; }
-          main .main-container .terceraSeccion .card-group .card #tigre {
-            height: 50%;
-            width: 100%; }
-          main .main-container .terceraSeccion .card-group .card #serpiente {
-            height: 50%;
-            width: 100%; }
+        .main-container .terceraSeccion .card-group .card {
+          height: 98%;
+          color: #ffffff;
+          background-color: #0b0b0e; }
+          .main-container .terceraSeccion .card-group .card #grulla, .main-container .terceraSeccion .card-group .card #tigre, .main-container .terceraSeccion .card-group .card #serpiente {
+            height: 40%;
+            width: 80%;
+            border-radius: 50%;
+            margin: 20px; }
+          .main-container .terceraSeccion .card-group .card #tigre {
+            background-color: #0b0b0e; }
+          .main-container .terceraSeccion .card-group .card .card-body {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center; }
   footer {
     height: 120px; }
     footer li {
@@ -221,17 +270,17 @@ Header {
     grid-template-areas: "contacto crearcuenta" "contacto crearcuenta";
     justify-items: center;
     align-items: flex-start; }
-  .contenedor-mensaje div h4 {
+  .contenedor-mensaje div h2 {
     font-size: 50px; }
   .contenedor-mensaje {
     width: 60%;
     border: 2px solid #fafafa;
-    transform: translateY(40px);
+    transform: translateY(28px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 60%;
-    padding: 30px; }
+    height: 80%;
+    padding: 20px; }
   .contenedor-cuenta {
     height: 80%;
     width: 60%;
@@ -241,7 +290,7 @@ Header {
   .titulo-cuenta {
     font-size: 3vw;
     text-align: center;
-    margin: 10px; }
+    margin: 20px; }
   .form-cuenta {
     row-gap: 15px;
     height: 100%;
@@ -263,14 +312,22 @@ Header {
   /* seccion galeria */
   .main-galeria {
     grid-template-columns: 100%;
-    grid-template-rows: 0.8fr 0.7fr;
-    grid-template-areas: "fotos" "videos";
-    overflow-x: hidden; }
+    grid-template-rows: 1000px 1000px;
+    grid-template-areas: "fotos" "videos"; }
   .contenedor-fotos {
     grid-area: fotos;
     display: flex;
     flex-direction: column;
-    height: 100%; }
+    height: 90%;
+    width: 60%;
+    margin: 30px;
+    justify-self: center; }
+  .d-block {
+    height: 700px; }
+  .carousel-item {
+    height: 60%; }
+  .carousel-inner {
+    height: 600px; }
   .titulo-fotos {
     font-size: 50px;
     margin: 30px; }
@@ -278,67 +335,60 @@ Header {
     grid-area: videos;
     display: flex;
     flex-direction: column; }
-  .carousel-inner {
-    transform: translateX(350px); }
-  .fotos {
-    height: 600px;
-    width: 60%; }
-  .carousel-control-prev {
-    transform: translateX; }
-  .carousel-control-next {
-    transform: translateX; }
   .titulo-videos {
     margin: 30px; }
   .videos {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-areas: "video1 video2" "video3 video4" "video5 video6";
-    height: 1300px;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "video1 video2 video3" " video4 video5 video6";
     row-gap: 20px; }
   /* seccion historia   */
   .contenedorHistoria {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "historia famosos"; }
-  #seccionHistoria {
-    grid-area: historia;
-    height: 100%;
-    width: 100%; }
-  #seccionFamosos {
-    grid-area: famosos;
-    height: 100%; }
-  .tituloHistoria h2 {
-    font-size: 4vw; }
-  .texto-historia {
-    height: 100%;
-    width: 80%; }
-  .texto-historia p {
-    font-size: 1.1vw;
-    padding: 20px; }
-  .titulo-famosos {
-    text-align: center;
-    font-size: 60px; }
-  .titulo-ipman {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px; }
-  .ip-man {
-    padding: 20px;
-    margin: 10px; }
-  .titulo-bruce {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px; }
-  .bruce-lee {
-    padding: 30px;
-    margin: 15px; }
-  .foto-brucelee {
-    width: 50%;
-    height: 400px; }
-  .img-bruce {
-    width: 100%;
-    height: 100%; }
+    grid-template-columns: 100%;
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: "historia"  "famosos"; }
+    .contenedorHistoria #seccionHistoria {
+      grid-area: historia;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .contenedorHistoria #seccionHistoria .tituloHistoria h2 {
+        font-size: 4vw;
+        margin: 20px; }
+    .contenedorHistoria .texto-historia {
+      height: 100%;
+      width: 80%; }
+      .contenedorHistoria .texto-historia p {
+        font-size: 20px;
+        padding: 20px; }
+    .contenedorHistoria #seccionFamosos {
+      grid-area: famosos;
+      height: 100%; }
+      .contenedorHistoria #seccionFamosos div .titulo-famosos {
+        text-align: center;
+        font-size: 60px; }
+    .contenedorHistoria .ip-man {
+      padding: 20px;
+      margin: 10px; }
+      .contenedorHistoria .ip-man div .titulo-ipman {
+        font-size: 40px;
+        margin-bottom: 20px; }
+    .contenedorHistoria .bruce-lee {
+      padding: 30px;
+      margin: 15px; }
+      .contenedorHistoria .bruce-lee div .titulo-bruce {
+        font-size: 40px;
+        margin-bottom: 20px; }
+    .contenedorHistoria .foto-brucelee {
+      width: 80%;
+      height: 100%;
+      display: flex; }
+      .contenedorHistoria .foto-brucelee .img-bruce {
+        width: 30%;
+        height: 60%; }
   /*seccion taller*/
   #seccion-taller {
     display: flex;
@@ -367,8 +417,6 @@ Header {
     Header .img-header {
       animation-name: movimiento;
       animation-duration: 1.5s; }
-  nav #navbar {
-    display: none; }
   nav .nav-container {
     row-gap: 10px;
     display: flex;
@@ -379,68 +427,78 @@ Header {
     justify-content: center; }
   nav .nav-container a {
     width: 90%; }
-  main .main-container {
+  .main-container {
     grid-template-columns: 100%;
-    grid-template-rows: 0.3fr 0.5fr 0.7fr 0.5fr;
+    grid-template-rows: 0.6fr 0.7fr 0.5fr 0.5fr;
     grid-template-areas: "primeraseccion" "segundaseccion"  "terceraseccion" "aside"; }
-    main .main-container #primeraSeccion {
+    .main-container #primeraSeccion {
       grid-area: primeraseccion;
-      height: 100%; }
-      main .main-container #primeraSeccion .contenedorKungfu {
-        height: 75%;
+      height: 100%;
+      margin-bottom: 30px; }
+      .main-container #primeraSeccion .contenedorKungfu {
+        height: 100%;
         width: 95%;
         justify-content: space-evenly; }
-        main .main-container #primeraSeccion .contenedorKungfu h2 {
-          font-size: 40px;
+        .main-container #primeraSeccion .contenedorKungfu h2 {
+          font-size: 30px;
           margin-top: 20px; }
-    main .main-container .segundaSeccion {
+    .main-container .segundaSeccion {
       grid-area: segundaseccion;
       flex-direction: column;
       width: 100%;
-      height: 100%; }
-      main .main-container .segundaSeccion .contenedor-objetivos {
+      align-items: center;
+      margin-top: 40px; }
+      .main-container .segundaSeccion .contenedor-objetivos {
         width: 100%;
-        height: 1200px; }
-      main .main-container .segundaSeccion .contenedor-beneficios {
-        width: 90%;
-        height: 80%; }
-        main .main-container .segundaSeccion .contenedor-beneficios div h3 {
+        height: 1000px; }
+        .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
+          height: 100%;
+          margin: 10px; }
+          .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
+            margin: 10px; }
+      .main-container .segundaSeccion .contenedor-beneficios {
+        width: 95%;
+        height: 100%;
+        align-items: center; }
+        .main-container .segundaSeccion .contenedor-beneficios div h3 {
           height: 42px; }
-        main .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
-          height: 80%;
-          display: flex;
-          flex-direction: column; }
-    main .main-container .terceraSeccion {
+        .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
+          height: 700px;
+          padding: 10px; }
+          .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
+            padding: 10px;
+            width: 100%; }
+    .main-container .terceraSeccion {
       grid-area: terceraseccion;
       display: flex;
       flex-direction: column;
       height: 100%;
       align-items: center; }
-      main .main-container .terceraSeccion .titulo-tecnicas h3 {
+      .main-container .terceraSeccion .titulo-tecnicas h3 {
         font-size: 9vw;
         text-align: center;
         margin: 30px; }
-      main .main-container .terceraSeccion .card-group {
+      .main-container .terceraSeccion .card-group {
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column; }
-        main .main-container .terceraSeccion .card-group .card {
+        .main-container .terceraSeccion .card-group .card {
           height: 80%;
           width: 100%;
           color: #fdfdfd; }
-          main .main-container .terceraSeccion .card-group .card #tigre {
+          .main-container .terceraSeccion .card-group .card #tigre {
             height: 50%;
             width: 100%; }
-          main .main-container .terceraSeccion .card-group .card .card-body {
+          .main-container .terceraSeccion .card-group .card .card-body {
             background-color: #0b0b0e; }
-          main .main-container .terceraSeccion .card-group .card #grulla {
+          .main-container .terceraSeccion .card-group .card #grulla, .main-container .terceraSeccion .card-group .card #tigre, .main-container .terceraSeccion .card-group .card #serpiente {
             height: 50%;
             width: 100%; }
-          main .main-container .terceraSeccion .card-group .card #serpiente {
+          .main-container .terceraSeccion .card-group .card #serpiente {
             height: 50%;
             width: 100%; }
-    main .main-container #aside {
+    .main-container #aside {
       grid-area: aside;
       height: 1000px;
       width: 100%;
@@ -448,7 +506,7 @@ Header {
       flex-direction: column;
       background-color: #0b0b0e;
       color: black; }
-      main .main-container #aside #cuenta {
+      .main-container #aside #cuenta {
         height: 50%;
         width: 100%;
         display: flex;
@@ -457,28 +515,28 @@ Header {
         border: 2px solid black;
         background-color: #0b0b0e;
         color: white; }
-        main .main-container #aside #cuenta div .titulo-login {
+        .main-container #aside #cuenta div .titulo-login {
           text-align: center;
           font-size: 36px;
           margin: 20px; }
-        main .main-container #aside #cuenta .form-login {
+        .main-container #aside #cuenta .form-login {
           display: flex;
           height: 80%;
           width: 70%; }
-          main .main-container #aside #cuenta .form-login label {
+          .main-container #aside #cuenta .form-login label {
             height: 100%;
             width: 95%;
             display: flex;
             font-size: 25px;
             margin: 10px;
             flex-direction: column; }
-            main .main-container #aside #cuenta .form-login label input {
+            .main-container #aside #cuenta .form-login label input {
               width: 200px;
               font-size: 20px; }
-          main .main-container #aside #cuenta .form-login .ingresar {
+          .main-container #aside #cuenta .form-login .ingresar {
             margin-left: 10px;
             margin-bottom: 10px; }
-      main .main-container #aside #descuento {
+      .main-container #aside #descuento {
         height: 50%;
         width: 100%;
         display: flex;
@@ -486,21 +544,21 @@ Header {
         border: 2px solid black;
         background-color: #0b0b0e;
         color: white; }
-        main .main-container #aside #descuento div .titulo-descuento {
+        .main-container #aside #descuento div .titulo-descuento {
           font-size: 33px;
           padding: 10px;
           margin: 20px; }
-        main .main-container #aside #descuento .form-descuento {
+        .main-container #aside #descuento .form-descuento {
           height: 85%;
           width: 85%;
           display: flex;
           flex-direction: column;
           justify-content: space-around; }
-          main .main-container #aside #descuento .form-descuento label {
+          .main-container #aside #descuento .form-descuento label {
             margin-left: 30px;
             padding: 10px;
             width: 230px; }
-            main .main-container #aside #descuento .form-descuento label input {
+            .main-container #aside #descuento .form-descuento label input {
               width: 200px; }
   footer .footer-contenedor {
     display: flex;
@@ -554,24 +612,22 @@ Header {
   /*Seccion galeria */
   .main-galeria {
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 70%;
+    grid-template-rows: 26% 70%;
     grid-template-areas: "fotos" "videos"; }
-  .contenedor-fotos {
-    display: flex;
-    flex-direction: column;
-    margin: 20px; }
+    .main-galeria .contenedor-fotos {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      align-items: center;
+      justify-content: space-evenly; }
+  .d-block {
+    width: 4px; }
+  #galeria-img {
+    width: 80%;
+    height: 100%; }
   .titulo-fotos {
     text-align: center;
-    font-size: 40px; }
-  .imagenes {
-    grid-template-columns: 90%;
-    grid-template-rows: 200px 300px 300px 300px 300px 290px;
-    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
-    justify-items: center;
-    row-gap: 15px; }
-  .imagenes img {
-    width: 100%;
-    height: 100%; }
+    font-size: 30px; }
   .contenedor-videos {
     display: flex;
     flex-direction: column; }
@@ -595,30 +651,34 @@ Header {
     grid-template-areas: "seccion1 "  "seccion2";
     justify-items: center;
     align-content: space-evenly; }
-  #seccionHistoria {
-    grid-area: seccion1;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px; }
-  .tituloHistoria {
-    display: flex;
-    justify-content: center; }
-  .texto-historia {
-    padding: 10px; }
-  #seccionFamosos {
-    grid-area: seccion2;
-    width: 95%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .titulo-famosos {
-    font-size: 30px;
-    text-align: center;
-    margin: 15px; }
+    .contenedorHistoria #seccionHistoria {
+      grid-area: seccion1;
+      width: 95%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 20px; }
+      .contenedorHistoria #seccionHistoria .tituloHistoria {
+        display: flex;
+        justify-content: center; }
+      .contenedorHistoria #seccionHistoria .texto-historia {
+        margin: 30px; }
+    .contenedorHistoria #seccionFamosos {
+      grid-area: seccion2;
+      width: 95%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      .contenedorHistoria #seccionFamosos div .titulo-famosos {
+        font-size: 30px;
+        text-align: center;
+        margin: 15px; }
+      .contenedorHistoria #seccionFamosos .ip-man div .titulo-ipman {
+        text-align: center;
+        font-size: 25px;
+        margin: 15px; }
   .ipman-foto {
     height: 350px;
     width: 90%;
@@ -628,10 +688,6 @@ Header {
   .foto_ipman img {
     width: 90%;
     height: 90%; }
-  .titulo-ipman {
-    text-align: center;
-    font-size: 25px;
-    margin: 15px; }
   .titulo-bruce {
     font-size: 25px;
     text-align: center;
@@ -647,21 +703,6 @@ Header {
   .img-brucelee {
     width: 90%;
     height: 50%; }
-  @keyframes ipman-mobile {
-    0% {
-      background-image: url(../fotos/ipman.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    25% {
-      background-image: url(../fotos/ipman.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    40% {
-      background-image: url(../fotos/ipman2.jpg);
-      background-size: cover; }
-    100% {
-      background-image: url(../fotos/ipman3.jpeg);
-      background-size: cover; } }
   /*seccion taller*/
   #seccion-taller {
     display: flex;
@@ -669,25 +710,31 @@ Header {
     height: 100%; }
   .tituloTaller h2 {
     font-size: 20px;
-    text-align: center; }
+    text-align: center;
+    margin: 20px; }
   .contenedor-tablas {
     height: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 4vw; }
+    margin-top: 20px; }
   tr, td {
-    padding: 2px; }
+    padding: 5px;
+    font-size: 14px; }
+  th {
+    padding: 4px; }
   #tabla {
     margin: 10px; }
   #ubicacion {
     height: 50%;
     display: flex;
     flex-direction: column;
-    padding: 10px; }
+    padding: 10px;
+    margin: 15px; }
   .titulo-ubicacion {
     text-align: center;
-    font-size: 30px; } }
+    font-size: 25px;
+    margin: 15px; } }
 
 footer {
   background-color: azure;
@@ -739,110 +786,134 @@ footer {
     background-color: #fdfdfd;
     color: black; } }
 
+@keyframes ipman {
+  0% {
+    background-image: url(../../fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  50% {
+    background-image: url(../../fotos/ipman2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  100% {
+    background-image: url(../../fotos/ipman3.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain; } }
+
+@keyframes ipman-mobile {
+  0% {
+    background-image: url(/fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  25% {
+    background-image: url(/fotos/ipman.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  40% {
+    background-image: url(/fotos/ipman2.jpg);
+    background-size: contain; }
+  100% {
+    background-image: url(/fotos/ipman3.jpeg);
+    background-size: 100px; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Noto Sans JP', sans-serif; }
 
-main .main-container {
+.main-container {
   display: grid;
   background-color: #0b0b0e;
   color: white; }
-  main .main-container #primeraSeccion {
+  .main-container #primeraSeccion {
     grid-area: primeraseccion;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    main .main-container #primeraSeccion .contenedorKungfu {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      main .main-container #primeraSeccion .contenedorKungfu h2 {
-        text-align: center;
-        margin: 30px; }
-      main .main-container #primeraSeccion .contenedorKungfu p {
-        font-size: 18px;
-        padding: 15px; }
-  main .main-container #aside {
-    grid-area: aside;
-    display: flex;
-    color: white;
-    background-color: #0b0b0e; }
-    main .main-container #aside #cuenta {
+    flex-direction: column; }
+    .main-container #primeraSeccion .contenedorKungfu {
       display: flex;
       flex-direction: column; }
-      main .main-container #aside #cuenta .titulo-login {
+      .main-container #primeraSeccion .contenedorKungfu h2 {
+        text-align: center; }
+      .main-container #primeraSeccion .contenedorKungfu p {
+        font-size: 18px;
+        padding: 15px; }
+      .main-container #primeraSeccion .contenedorKungfu div img {
+        width: 100%;
+        height: 100%; }
+  .main-container #aside {
+    grid-area: aside;
+    display: flex;
+    color: white; }
+    .main-container #aside #cuenta {
+      display: flex;
+      flex-direction: column; }
+      .main-container #aside #cuenta .titulo-login {
         text-align: center;
         font-size: 30px; }
-      main .main-container #aside #cuenta .form-login {
+      .main-container #aside #cuenta .form-login {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        border: 2px solid white; }
-        main .main-container #aside #cuenta .form-login .ingresar {
+        justify-content: space-evenly; }
+        .main-container #aside #cuenta .form-login .ingresar {
           transition: all 0.2s; }
-        main .main-container #aside #cuenta .form-login .ingresar:hover {
+        .main-container #aside #cuenta .form-login .ingresar:hover {
           background-color: #5c5d5f;
           transform: scale(1, 1); }
-        main .main-container #aside #cuenta .form-login label {
+        .main-container #aside #cuenta .form-login label {
           display: flex;
           flex-direction: column; }
-    main .main-container #aside #descuento {
+    .main-container #aside #descuento {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
-      main .main-container #aside #descuento .titulo-descuento {
+      .main-container #aside #descuento .titulo-descuento {
         animation-name: descuento;
         animation-duration: 7s;
         animation-iteration-count: infinite;
         animation-direction: alternate; }
-      main .main-container #aside #descuento .form-descuento {
+      .main-container #aside #descuento .form-descuento {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         border: 2px solid white; }
-  main .main-container .segundaSeccion {
+  .main-container .segundaSeccion {
     grid-area: segundaseccion;
-    display: flex; }
-    main .main-container .segundaSeccion .contenedor-objetivos {
+    display: flex;
+    align-self: center; }
+    .main-container .segundaSeccion .contenedor-objetivos {
       display: flex;
       flex-direction: column;
       justify-content: flex-start; }
-      main .main-container .segundaSeccion .contenedor-objetivos div .titulo-objetivos {
-        text-align: center;
-        font-size: 35px;
-        margin: 10px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-      main .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
-        display: flex;
-        justify-content: space-evenly;
-        height: 80%;
-        flex-direction: column;
-        margin: 15px;
-        padding: 20px; }
-        main .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
-          list-style: none; }
-    main .main-container .segundaSeccion .contenedor-beneficios {
-      display: flex;
-      flex-direction: column;
-      padding: 20px; }
-      main .main-container .segundaSeccion .contenedor-beneficios div .titulo-beneficios {
+      .main-container .segundaSeccion .contenedor-objetivos div .titulo-objetivos {
         text-align: center;
         font-size: 40px;
-        margin: 10px; }
-      main .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
+        margin-top: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column; }
+        .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
+          list-style: none; }
+    .main-container .segundaSeccion .contenedor-beneficios {
+      display: flex;
+      flex-direction: column; }
+      .main-container .segundaSeccion .contenedor-beneficios div .titulo-beneficios {
+        text-align: center;
+        font-size: 40px;
+        margin: 15px; }
+      .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center; }
-        main .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
+        .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
           list-style: none; }
-  main .main-container .terceraSeccion {
+  .main-container .terceraSeccion {
     grid-area: terceraseccion; }
-    main .main-container .terceraSeccion .titulo-tecnicas {
+    .main-container .terceraSeccion .titulo-tecnicas {
       grid-area: titulo; }
 
 /* seccion contactos */
@@ -879,40 +950,6 @@ main .main-container {
 
 .titulo-fotos {
   text-align: center; }
-
-.imagenes {
-  display: grid; }
-
-.fotos {
-  height: 350px;
-  width: 90%; }
-
-.carousel-inner {
-  transform: translateX(20px); }
-
-.img-1 {
-  grid-area: foto1;
-  transition: all 0.5s; }
-
-.img-2 {
-  grid-area: foto2;
-  transition: all 0.5s; }
-
-.img-3 {
-  grid-area: foto3;
-  transition: all 0.5s; }
-
-.img-4 {
-  grid-area: foto4;
-  transition: all 0.5s; }
-
-.img-5 {
-  grid-area: foto5;
-  transition: all 0.5s; }
-
-.img-6 {
-  grid-area: foto6;
-  transition: all 0.5s; }
 
 .titulo-videos {
   text-align: center;
@@ -982,51 +1019,23 @@ main .main-container {
   display: grid;
   background-color: #0b0b0e;
   color: white; }
-
-#seccionHistoria {
-  grid-area: historia;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-
-#seccionFamosos {
-  grid-area: famosos; }
-
-.tituloHistoria h2 {
-  text-align: center; }
-
-.texto-historia {
-  display: flex;
-  justify-content: center; }
-
-.ipman-foto {
-  animation-name: ipman;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  height: 400px;
-  width: 900px; }
-
-@keyframes ipman {
-  0% {
-    background-image: url(../fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  50% {
-    background-image: url(../fotos/ipman2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  100% {
-    background-image: url(../fotos/ipman3.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain; } }
+  .contenedorHistoria #seccionHistoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .contenedorHistoria #seccionFamosos .ipman-foto {
+    animation-name: ipman;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    height: 400px;
+    width: 900px; }
 
 .bruce-lee {
   display: flex;
   flex-direction: column; }
 
 .foto-brucelee {
-  width: 50%;
-  height: 400px; }
+  width: 50%; }
 
 .img-bruce {
   width: 100%;

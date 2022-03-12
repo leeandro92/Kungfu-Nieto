@@ -2,13 +2,14 @@
 @import"_mediaquery.scss";
 @import "_footer.scss";
 @import "_animaciones.scss";
+@import "_mixin.scss";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans JP', sans-serif;
   }
-   main {
+  
     .main-container {
       display: grid;
       background-color: rgb(11, 11, 14);
@@ -17,18 +18,21 @@
           grid-area: primeraseccion;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
             .contenedorKungfu {
               display: flex;
               flex-direction: column;
-              justify-content: center;
+              
                   h2 {
-                    text-align: center;
-                    margin: 30px;
+                    text-align: center; 
                   }
                   p{ font-size: 18px;
                     padding: 15px;
+                  }
+                  div{
+                    img {
+                      width: 100%;
+                      height: 100%;
+                    }
                   }
             }
           }
@@ -36,8 +40,6 @@
         grid-area: aside;
         display: flex;
         color: white;
-        background-color: rgb(11, 11, 14);
-        
         #cuenta {
           display: flex;
           flex-direction: column;
@@ -49,10 +51,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            border: 2px solid white;
             .ingresar{
               transition:all 0.2s ;
-            
             }
             .ingresar:hover {
               background-color: #5c5d5f;
@@ -86,6 +86,8 @@
       .segundaSeccion {
         grid-area: segundaseccion;
         display: flex;
+        align-self: center;
+        
       .contenedor-objetivos {
         display: flex;
         flex-direction: column;
@@ -93,40 +95,34 @@
         div {
           .titulo-objetivos {
             text-align: center;
-            font-size: 35px;
-            margin: 10px;
+            font-size: 40px;
+            margin-top: 20px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           }
         }
         .ul-objetivos{
           display: flex;
-          justify-content: space-evenly;
-          height: 80%;
+          justify-content: space-around;
           flex-direction: column;
-          margin: 15px;
-          padding:20px;
           li {
             list-style: none;
           }
-        
         }
       }
       .contenedor-beneficios {
         display: flex;
-        flex-direction: column;
-       padding: 20px;
-        
+        flex-direction: column;  
          div {
           .titulo-beneficios{
             text-align:  center;
             font-size: 40px;
-            margin: 10px;
+            margin: 15px;
           }
          }
          .ul-beneficios{
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
+          justify-content: space-around;
           align-items: center;
           li {
             list-style: none;
@@ -143,14 +139,7 @@
         }
       }                        
     }       
-  } 
-  
-   
-    
-    
-
-  
-  
+ 
                                                                 /* seccion contactos */
   
   .main-contactos {
@@ -189,46 +178,7 @@
   .titulo-fotos {
     text-align: center;
   }
-  .imagenes {
-    display: grid;
-  }
-  .fotos {
-    height: 350px;
-    width: 90%;
-  }
-  .carousel-inner {
-    transform: translateX(20px);
-  }
-  .img-1 {
-  grid-area: foto1;
-  transition: all 0.5s;
-  
-  }
-  
-  .img-2{
-    grid-area: foto2;
-    transition: all 0.5s;
-  }
-  
-  .img-3 {
-    grid-area: foto3;
-    transition: all 0.5s;
-  }
-  
-  .img-4 {
-    grid-area: foto4;
-    transition: all 0.5s;
-  }
-  
-  .img-5 {
-    grid-area: foto5;
-    transition: all 0.5s;
-  }
-  
-  .img-6 {
-    grid-area: foto6;
-    transition: all 0.5s;
-  }
+
   
   .titulo-videos {
     text-align: center;
@@ -237,6 +187,7 @@
   }
   .videos{ 
     display: grid;
+    
   }
   .video1 {
     grid-area: video1;
@@ -298,54 +249,39 @@
     display:grid;
     background-color: rgb(11, 11, 14);
     color: white; 
-  }
-  #seccionHistoria {
-    grid-area:historia ;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+    #seccionHistoria {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
     #seccionFamosos{
-        grid-area:famosos;
-  }
-  .tituloHistoria h2{
-    text-align: center;
-  }
-  .texto-historia{
-    display: flex;
-    justify-content: center;
-  }
-  .ipman-foto {
-    animation-name:ipman ;
-    animation-duration:15s ;
-    animation-iteration-count:infinite ;
-    height: 400px;
-    width: 900px;
-  }
-  @keyframes ipman {
-    0% {
-        background-image: url(../fotos/ipman.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;    
+        .ipman-foto {
+          animation-name:ipman ;
+          animation-duration:15s ;
+          animation-iteration-count:infinite ;
+          height: 400px;
+          width: 900px;
+         
+         
+        }
+      
+
+    }  
     }
-    50% {
-        background-image: url(../fotos/ipman2.jpg) ;
-        background-repeat: no-repeat;
-        background-size: contain;  
-    }
-    100% {
-        background-image: url(../fotos/ipman3.jpeg) ;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-  }
+  
+  
+   
+   
+  
+  
+
   .bruce-lee{ 
        display: flex;
        flex-direction: column;
    }
   .foto-brucelee {
        width: 50%;
-        height: 400px;
+        
    }
   .img-bruce {
        width: 100%;
@@ -388,8 +324,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+  }  
         
   
   
