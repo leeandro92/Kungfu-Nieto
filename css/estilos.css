@@ -1,3 +1,4 @@
+@charset "UTF-8";
 Header {
   display: flex;
   width: 100%;
@@ -46,36 +47,6 @@ Header {
   100% {
     background-color: #fdfdfd;
     color: black; } }
-
-@keyframes ipman {
-  0% {
-    background-image: url(../../fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  50% {
-    background-image: url(../../fotos/ipman2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  100% {
-    background-image: url(../../fotos/ipman3.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain; } }
-
-@keyframes ipman-mobile {
-  0% {
-    background-image: url(/fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  25% {
-    background-image: url(/fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  40% {
-    background-image: url(/fotos/ipman2.jpg);
-    background-size: contain; }
-  100% {
-    background-image: url(/fotos/ipman3.jpeg);
-    background-size: 100px; } }
 
 @media only screen and (min-width: 992px) {
   * {
@@ -164,20 +135,13 @@ Header {
               height: 50px; }
       .main-container #aside #descuento {
         height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; }
+        width: 100%; }
         .main-container #aside #descuento div .titulo-descuento {
           font-size: 25px;
           padding: 10px; }
         .main-container #aside #descuento .form-descuento {
           height: 100%;
-          width: 95%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around; }
+          width: 95%; }
           .main-container #aside #descuento .form-descuento label {
             padding: 10px;
             width: 90%;
@@ -250,6 +214,8 @@ Header {
             justify-content: space-evenly;
             flex-direction: column;
             align-items: center; }
+            .main-container .terceraSeccion .card-group .card .card-body .card-title {
+              font-size: 35px; }
   footer {
     height: 120px; }
     footer li {
@@ -261,7 +227,7 @@ Header {
     footer ul .li-footer {
       font-size: 20px; }
     footer .redes-sociales div .redesSociales {
-      font-size: 25px; }
+      font-size: 20px; }
   /*seccion Contactos */
   .main-contactos {
     height: 1000px;
@@ -343,6 +309,10 @@ Header {
     grid-template-rows: 400px 400px;
     grid-template-areas: "video1 video2 video3" " video4 video5 video6";
     row-gap: 20px; }
+  .video1 {
+    margin-left: 20px; }
+  .video4 {
+    margin-left: 20px; }
   /* seccion historia   */
   .contenedorHistoria {
     grid-template-columns: 100%;
@@ -369,25 +339,27 @@ Header {
       height: 100%; }
       .contenedorHistoria #seccionFamosos div .titulo-famosos {
         text-align: center;
-        font-size: 60px; }
+        font-size: 60px;
+        margin-bottom: 40px; }
     .contenedorHistoria .ip-man {
       padding: 20px;
       margin: 10px; }
       .contenedorHistoria .ip-man div .titulo-ipman {
         font-size: 40px;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        text-align: center; }
     .contenedorHistoria .bruce-lee {
       padding: 30px;
       margin: 15px; }
       .contenedorHistoria .bruce-lee div .titulo-bruce {
         font-size: 40px;
+        text-align: center;
         margin-bottom: 20px; }
     .contenedorHistoria .foto-brucelee {
-      width: 80%;
-      height: 100%;
-      display: flex; }
+      width: 30%;
+      height: 60%; }
       .contenedorHistoria .foto-brucelee .img-bruce {
-        width: 30%;
+        width: 60%;
         height: 60%; }
   /*seccion taller*/
   #seccion-taller {
@@ -473,8 +445,9 @@ Header {
       display: flex;
       flex-direction: column;
       height: 100%;
-      align-items: center; }
-      .main-container .terceraSeccion .titulo-tecnicas h3 {
+      align-items: center;
+      margin-top: 10px; }
+      .main-container .terceraSeccion .titulo-tecnicas h4 {
         font-size: 9vw;
         text-align: center;
         margin: 30px; }
@@ -489,9 +462,13 @@ Header {
           color: #fdfdfd; }
           .main-container .terceraSeccion .card-group .card #tigre {
             height: 50%;
-            width: 100%; }
+            width: 90%; }
           .main-container .terceraSeccion .card-group .card .card-body {
             background-color: #0b0b0e; }
+            .main-container .terceraSeccion .card-group .card .card-body .card-title {
+              text-align: center;
+              font-size: 6vw;
+              margin-bottom: 15px; }
           .main-container .terceraSeccion .card-group .card #grulla, .main-container .terceraSeccion .card-group .card #tigre, .main-container .terceraSeccion .card-group .card #serpiente {
             height: 50%;
             width: 100%; }
@@ -523,6 +500,8 @@ Header {
           display: flex;
           height: 80%;
           width: 70%; }
+          .main-container #aside #cuenta .form-login #contraseña {
+            transform: translateY(-50px); }
           .main-container #aside #cuenta .form-login label {
             height: 100%;
             width: 95%;
@@ -534,14 +513,12 @@ Header {
               width: 200px;
               font-size: 20px; }
           .main-container #aside #cuenta .form-login .ingresar {
-            margin-left: 10px;
-            margin-bottom: 10px; }
+            transform: translate(17px, -90px); }
       .main-container #aside #descuento {
         height: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        border: 2px solid black;
         background-color: #0b0b0e;
         color: white; }
         .main-container #aside #descuento div .titulo-descuento {
@@ -554,6 +531,8 @@ Header {
           display: flex;
           flex-direction: column;
           justify-content: space-around; }
+          .main-container #aside #descuento .form-descuento .btnEnviar {
+            transform: translate(30px, 30px); }
           .main-container #aside #descuento .form-descuento label {
             margin-left: 30px;
             padding: 10px;
@@ -569,6 +548,9 @@ Header {
       flex-direction: column; }
     footer .footer-contenedor li {
       list-style: none; }
+      footer .footer-contenedor li i {
+        font-size: 20px;
+        padding: 5px; }
   /* seccion contactos*/
   .main-contactos {
     grid-template-columns: 1fr;
@@ -592,10 +574,11 @@ Header {
   textarea {
     width: 70%;
     height: 15vw; }
-  .contenedor-cuenta h4 {
+  .contenedor-cuenta h3 {
     font-size: 20px;
     padding: 5px;
-    text-align: center; }
+    text-align: center;
+    margin: 15px; }
   .contenedor-cuenta {
     height: 100%;
     margin: 10px;
@@ -642,7 +625,8 @@ Header {
     width: 100%;
     height: 100%; }
   .titulo-videos {
-    font-size: 6.5vw; }
+    font-size: 6.7vw;
+    transform: translateY(-30px); }
   /* seccion historia */
   .contenedorHistoria {
     height: 100%;
@@ -681,13 +665,9 @@ Header {
         margin: 15px; }
   .ipman-foto {
     height: 350px;
-    width: 90%;
-    animation-name: ipman-mobile;
-    animation-duration: 15s;
-    animation-iteration-count: infinite; }
-  .foto_ipman img {
-    width: 90%;
-    height: 90%; }
+    width: 90%; }
+    .ipman-foto img {
+      margin-left: 50px; }
   .titulo-bruce {
     font-size: 25px;
     text-align: center;
@@ -698,11 +678,15 @@ Header {
     display: flex;
     flex-direction: column; }
   .foto-brucelee img {
-    width: 100%;
-    height: 100%; }
-  .img-brucelee {
-    width: 90%;
-    height: 50%; }
+    width: 95%;
+    height: 100%;
+    transform: translateX(100px); }
+  .ipmanTexto {
+    margin: 5px;
+    padding: 10px; }
+  .textoBruce {
+    margin: 8px;
+    padding: 10px; }
   /*seccion taller*/
   #seccion-taller {
     display: flex;
@@ -786,36 +770,6 @@ footer {
     background-color: #fdfdfd;
     color: black; } }
 
-@keyframes ipman {
-  0% {
-    background-image: url(../../fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  50% {
-    background-image: url(../../fotos/ipman2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  100% {
-    background-image: url(../../fotos/ipman3.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain; } }
-
-@keyframes ipman-mobile {
-  0% {
-    background-image: url(/fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  25% {
-    background-image: url(/fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-  40% {
-    background-image: url(/fotos/ipman2.jpg);
-    background-size: contain; }
-  100% {
-    background-image: url(/fotos/ipman3.jpeg);
-    background-size: 100px; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -876,8 +830,7 @@ footer {
       .main-container #aside #descuento .form-descuento {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        border: 2px solid white; }
+        justify-content: space-around; }
   .main-container .segundaSeccion {
     grid-area: segundaseccion;
     display: flex;
@@ -921,20 +874,16 @@ footer {
   display: grid;
   background-color: #0b0b0e;
   color: white; }
-
-.titulo-mensaje {
-  text-align: center;
-  margin: 20px; }
-
-#enviar:hover {
-  background-color: #8b8f97;
-  transition: 0.5s; }
-
-.contenedor-mensaje {
-  grid-area: contacto; }
-
-.contenedor-cuenta {
-  grid-area: crearcuenta; }
+  .main-contactos .titulo-mensaje {
+    text-align: center;
+    margin: 20px; }
+  .main-contactos #enviar:hover {
+    background-color: #8b8f97;
+    transition: 0.5s; }
+  .main-contactos .contenedor-mensaje {
+    grid-area: contacto; }
+  .main-contactos .contenedor-cuenta {
+    grid-area: crearcuenta; }
 
 /*Seccion galeria */
 .main-galeria {
@@ -953,7 +902,6 @@ footer {
 
 .titulo-videos {
   text-align: center;
-  font-size: 2.5vw;
   margin: 10px; }
 
 .videos {
@@ -966,8 +914,8 @@ footer {
   height: 90%; }
 
 .video1:hover {
-  width: 100%;
-  height: 100%; }
+  width: 95%;
+  height: 95%; }
 
 .video2 {
   grid-area: video2;
@@ -985,7 +933,7 @@ footer {
   height: 90%; }
 
 .video3:hover {
-  transform: scale(1.2, 1.2); }
+  transform: scale(1.1, 1.1); }
 
 .video4 {
   grid-area: video4;
@@ -994,7 +942,8 @@ footer {
   height: 90%; }
 
 .video4:hover {
-  transform: translateX(-30px) scale(1.1, 1.1); }
+  width: 93%;
+  height: 95%; }
 
 .video5 {
   grid-area: video5;
@@ -1003,7 +952,7 @@ footer {
   height: 90%; }
 
 .video5:hover {
-  transform: scale(1.2, 1.2); }
+  transform: scale(1.1, 1.1); }
 
 .video6 {
   grid-area: video6;
@@ -1012,7 +961,7 @@ footer {
   height: 90%; }
 
 .video6:hover {
-  transform: translateX(-30px) scale(1.1, 1.1); }
+  transform: scale(1.1, 1.1); }
 
 /* seccion historia */
 .contenedorHistoria {

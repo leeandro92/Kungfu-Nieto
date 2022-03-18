@@ -34,43 +34,4 @@
         color:rgb(0, 0, 0)
     }
   }
-  @keyframes ipman {
-    0% {
-        background-image: url(../../fotos/ipman.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;    
-    }
-    50% {
-        background-image: url(../../fotos/ipman2.jpg) ;
-        background-repeat: no-repeat;
-        background-size: contain;  
-    }
-    100% {
-        background-image: url(../../fotos/ipman3.jpeg) ;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-  }
-
-  @keyframes ipman-mobile {
-    0% {
-        background-image: url(/fotos/ipman.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-     25% {
-    background-image: url(/fotos/ipman.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-   }    
-    
-    40% {
-        background-image: url(/fotos/ipman2.jpg) ;
-        background-size: contain;  
-    }
-    100% {
-        background-image: url(/fotos/ipman3.jpeg) ;
-        background-size:100px 
-         
-    }
-  }
+  
