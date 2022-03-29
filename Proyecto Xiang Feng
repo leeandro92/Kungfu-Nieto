@@ -1,0 +1,11 @@
+ Nombre del proyecto:  Xiang feng
+ Nombre:   Nieto Leandro
+
+Este es el proyecto final para desarrollo web, en este proyecto llamado Xiang Feng , se basa en una escuela de kung fu en zona sur, utilizando las herramientas correspondientes
+para el sitio web y sus frameworks:
+                                  -HTML5
+                                  -CSS3
+                                  -Bootstrap
+                                  -Npm nodemon
+                                  -Sass
+Este sitio web tiene 5 secciones navegables con sus respectivos contenidos:  INDEX, GALERIA, TALLER, CONTACTO,HISTORIA. Tiene vista en desktop y en mobile.
