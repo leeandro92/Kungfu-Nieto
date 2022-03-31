@@ -21,7 +21,7 @@ Header {
     animation-duration: 0.7s;
     margin: 30px; }
 
-/*ESCRITORIO -INDEX*/
+/* VISTA ESCRITORIO -INDEX*/
 @keyframes movimiento {
   0% {
     transform: translateY(-150px); }
@@ -53,36 +53,36 @@ Header {
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-  nav #navegacion {
+  #navegacion {
     position: sticky;
     top: 0;
     height: 65px;
-    z-index: 1; }
-  nav #navbar-brand {
-    display: none; }
-  nav #navbar {
-    color: #afafaf;
-    transition: all 0.3s;
-    font-size: 24px;
-    margin-top: 2px; }
-  nav #navbar:hover {
-    color: rgba(255, 255, 255, 0.986);
-    transform: scale(1.1, 1.1); }
-  nav #nav-item {
-    color: #afafaf;
-    transition: all 0.3s;
-    font-size: 22px; }
-  nav #nav-item:hover {
-    color: white;
-    transform: scale(1.1, 1.1); }
-  nav #navbarNavAltMarkup {
-    display: flex;
-    justify-content: flex-end; }
+    z-index: 2; }
+    #navegacion #navbar-brand {
+      display: none; }
+    #navegacion #navbar {
+      color: #afafaf;
+      transition: all 0.3s;
+      font-size: 24px;
+      margin-top: 2px; }
+    #navegacion #navbar:hover {
+      color: rgba(255, 255, 255, 0.986);
+      transform: scale(1.1, 1.1); }
+    #navegacion #nav-item {
+      color: #afafaf;
+      transition: all 0.3s;
+      font-size: 22px; }
+    #navegacion #nav-item:hover {
+      color: white;
+      transform: scale(1.1, 1.1); }
+    #navegacion #navbarNavAltMarkup {
+      display: flex;
+      justify-content: flex-end; }
   .main-container {
     grid-template-columns: 80% 20%;
-    grid-template-rows: 1fr 1fr 01fr;
+    grid-template-rows: 1fr 0.7fr 1fr;
     grid-template-areas: "primeraseccion aside" "segundaseccion segundaseccion" "terceraseccion terceraseccion ";
-    height: 4000px;
+    height: 3000px;
     align-content: space-evenly; }
     .main-container #primeraSeccion {
       grid-area: primeraseccion;
@@ -103,8 +103,12 @@ Header {
           margin: 30px; }
         .main-container #primeraSeccion .contenedorKungfu div {
           height: 40%;
-          width: 50%;
-          border-radius: 60%; }
+          width: 50%; }
+          .main-container #primeraSeccion .contenedorKungfu div img {
+            opacity: 1;
+            transition: all 0.4s; }
+          .main-container #primeraSeccion .contenedorKungfu div img:hover {
+            opacity: 0.7; }
     .main-container #aside {
       grid-area: aside;
       height: 1200px;
@@ -153,39 +157,53 @@ Header {
           .main-container #aside #descuento .form-descuento .btnEnviar {
             margin-left: 50px;
             width: 60%;
-            transition: 0.7s; }
+            transition: all 0.4s;
+            transform: translate(-10px, 20px); }
           .main-container #aside #descuento .form-descuento .btnEnviar:hover {
             background-color: #5c5d5f; }
     .main-container .segundaSeccion {
       width: 100%;
       height: 100%;
-      margin-top: 200px; }
+      margin-top: 150px; }
       .main-container .segundaSeccion .contenedor-objetivos {
         width: 50%;
-        height: 80%; }
-        .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
-          height: 90%;
+        height: 100%; }
+        .main-container .segundaSeccion .contenedor-objetivos div {
+          margin: 10px; }
+          .main-container .segundaSeccion .contenedor-objetivos div .titulo-objetivos {
+            text-align: center;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+        .main-container .segundaSeccion .contenedor-objetivos #Objetivos {
+          height: 73%;
           padding: 10px;
-          margin: 20px; }
-          .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
-            font-size: 18px; }
+          margin: 0px  10px 0px 10px; }
+          .main-container .segundaSeccion .contenedor-objetivos #Objetivos li {
+            border-bottom: 1px solid #fafafa;
+            background-color: #0b0b0e;
+            color: #fdfdfd; }
       .main-container .segundaSeccion .contenedor-beneficios {
-        height: 80%;
+        height: 87%;
         padding: 10px;
         width: 50%; }
         .main-container .segundaSeccion .contenedor-beneficios div .titulo-beneficios {
           font-size: 40px;
           margin: 10px; }
-        .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
+        .main-container .segundaSeccion .contenedor-beneficios #Beneficios {
           height: 100%;
-          padding: 15px; }
-          .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
-            font-size: 18px; }
+          padding: 15px;
+          justify-content: space-evenly; }
+          .main-container .segundaSeccion .contenedor-beneficios #Beneficios li {
+            font-size: 18px;
+            border-bottom: 1px solid #fafafa;
+            background-color: #0b0b0e;
+            color: #fdfdfd; }
     .main-container .terceraSeccion {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      margin-top: 50px; }
       .main-container .terceraSeccion .titulo-tecnicas {
         grid-area: titulo;
         text-align: center; }
@@ -206,7 +224,9 @@ Header {
             height: 40%;
             width: 80%;
             border-radius: 50%;
-            margin: 20px; }
+            transition: all 0.5s; }
+          .main-container .terceraSeccion .card-group .card #grulla:hover, .main-container .terceraSeccion .card-group .card #tigre:hover, .main-container .terceraSeccion .card-group .card #serpiente:hover {
+            transform: scale(1.1, 1.1); }
           .main-container .terceraSeccion .card-group .card #tigre {
             background-color: #0b0b0e; }
           .main-container .terceraSeccion .card-group .card .card-body {
@@ -216,6 +236,8 @@ Header {
             align-items: center; }
             .main-container .terceraSeccion .card-group .card .card-body .card-title {
               font-size: 35px; }
+            .main-container .terceraSeccion .card-group .card .card-body .Tigre {
+              transform: translatey(10px); }
   footer {
     height: 120px; }
     footer li {
@@ -247,6 +269,10 @@ Header {
     justify-content: space-evenly;
     height: 80%;
     padding: 20px; }
+  .enviarMsj {
+    transform: translate(200px, 50px);
+    font-size: 20px;
+    width: 120px; }
   .contenedor-cuenta {
     height: 80%;
     width: 60%;
@@ -258,11 +284,12 @@ Header {
     text-align: center;
     margin: 20px; }
   .form-cuenta {
-    row-gap: 15px;
-    height: 100%;
+    row-gap: 25px;
+    height: 75%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: flex-end; }
   .form-cuenta label {
     width: 30%; }
   .form-cuenta input {
@@ -271,10 +298,14 @@ Header {
     width: 90%; }
   .input-cuenta {
     font-size: 20px; }
+  .labelHombre {
+    transform: translatex(-100px); }
+  .labelMujer {
+    transform: translate(-90px, -25px); }
   #hombre {
-    transform: translateX(-8vw); }
+    transform: translate(-100px, -20px); }
   #mujer {
-    transform: translateX(-8vw); }
+    transform: translate(-115px, -20px); }
   /* seccion galeria */
   .main-galeria {
     grid-template-columns: 100%;
@@ -301,8 +332,10 @@ Header {
     grid-area: videos;
     display: flex;
     flex-direction: column; }
+  .contenedorTituloVideo {
+    transform: translateY(-80px); }
   .titulo-videos {
-    margin: 30px; }
+    font-size: 40px; }
   .videos {
     display: grid;
     grid-template-columns: 35% 35% 30%;
@@ -316,7 +349,7 @@ Header {
   /* seccion historia   */
   .contenedorHistoria {
     grid-template-columns: 100%;
-    grid-template-rows: 0.8fr 1fr;
+    grid-template-rows: 0.8fr 0.5fr;
     grid-template-areas: "historia"  "famosos"; }
     .contenedorHistoria #seccionHistoria {
       grid-area: historia;
@@ -335,32 +368,89 @@ Header {
         font-size: 20px;
         padding: 20px; }
     .contenedorHistoria #seccionFamosos {
-      grid-area: famosos;
+      height: 1300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .contenedorHistoria #seccionFamosos .contenedorTitulo {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorHistoria #seccionFamosos .contenedorTitulo h3 {
+          font-size: 3vw;
+          margin: 10px;
+          padding: 10px; }
+      .contenedorHistoria #seccionFamosos .contenedorIpman {
+        height: 50%;
+        width: 100%;
+        display: flex; }
+        .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg {
+          height: 100%;
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg .img-ip {
+            width: 60%;
+            height: 65%;
+            transform: translatey(60px); }
+            .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg .img-ip img {
+              height: 100%;
+              width: 100%;
+              transition: all 0.5s; }
+            .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg .img-ip img:hover {
+              transform: scale(1.1, 1.1); }
+      .contenedorHistoria #seccionFamosos .contenedorTextoIp {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column; }
+        .contenedorHistoria #seccionFamosos .contenedorTextoIp .texto-ip {
+          width: 600px;
+          height: 300px; }
+          .contenedorHistoria #seccionFamosos .contenedorTextoIp .texto-ip p {
+            font-size: 18px; }
+        .contenedorHistoria #seccionFamosos .contenedorTextoIp .titulo-ip h3 {
+          font-size: 50px; }
+    .contenedorHistoria .contenedorBruce {
+      display: flex;
       height: 100%; }
-      .contenedorHistoria #seccionFamosos div .titulo-famosos {
-        text-align: center;
-        font-size: 60px;
-        margin-bottom: 40px; }
-    .contenedorHistoria .ip-man {
-      padding: 20px;
-      margin: 10px; }
-      .contenedorHistoria .ip-man div .titulo-ipman {
-        font-size: 40px;
-        margin-bottom: 20px;
-        text-align: center; }
-    .contenedorHistoria .bruce-lee {
-      padding: 30px;
-      margin: 15px; }
-      .contenedorHistoria .bruce-lee div .titulo-bruce {
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 20px; }
-    .contenedorHistoria .foto-brucelee {
-      width: 30%;
-      height: 60%; }
-      .contenedorHistoria .foto-brucelee .img-bruce {
-        width: 60%;
-        height: 60%; }
+      .contenedorHistoria .contenedorBruce .contenedorTextoBruce {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        .contenedorHistoria .contenedorBruce .contenedorTextoBruce .tituloBrucelee {
+          width: 40%; }
+          .contenedorHistoria .contenedorBruce .contenedorTextoBruce .tituloBrucelee h3 {
+            text-align: center;
+            font-size: 40px;
+            padding: 10px; }
+        .contenedorHistoria .contenedorBruce .contenedorTextoBruce .textoBrucelee {
+          width: 60%; }
+          .contenedorHistoria .contenedorBruce .contenedorTextoBruce .textoBrucelee p {
+            padding: 10px;
+            margin: 10px; }
+      .contenedorHistoria .contenedorBruce .contenedorImgBruce {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorHistoria .contenedorBruce .contenedorImgBruce .imgBrucelee {
+          height: 70%;
+          width: 50%; }
+          .contenedorHistoria .contenedorBruce .contenedorImgBruce .imgBrucelee #brucelee {
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s; }
+          .contenedorHistoria .contenedorBruce .contenedorImgBruce .imgBrucelee #brucelee:hover {
+            transform: scale(1.1, 1.1); }
   /*seccion taller*/
   #seccion-taller {
     display: flex;
@@ -369,20 +459,26 @@ Header {
     display: flex; }
   .tituloTaller {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 50px; }
+  .tituloTaller h2 {
+    font-size: 50px; }
   .contenedor-tablas {
     margin: 20px; }
-  .titulo-ubicacion {
-    font-size: 50px;
-    display: none; }
   tr, td {
-    padding: 10px; }
+    padding: 15px; }
+  th {
+    padding: 8px; }
   #ubicacion {
     width: 700px;
     height: 400px;
-    transform: translate(300px); } }
+    transform: translate(300px); }
+  #mapa {
+    transition: all 0.5s; }
+  #mapa:hover {
+    transform: scale(1.1, 1.1); } }
 
-/* VERSION MOBILE*/
+/* VISTA MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   Header {
     height: 150px; }
@@ -423,23 +519,31 @@ Header {
       .main-container .segundaSeccion .contenedor-objetivos {
         width: 100%;
         height: 1000px; }
-        .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
+        .main-container .segundaSeccion .contenedor-objetivos #Objetivos {
           height: 100%;
           margin: 10px; }
-          .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
-            margin: 10px; }
+          .main-container .segundaSeccion .contenedor-objetivos #Objetivos li {
+            margin: 10px;
+            background-color: #0b0b0e;
+            color: #fdfdfd;
+            border-bottom: 1px solid #fafafa;
+            margin-left: 25px; }
       .main-container .segundaSeccion .contenedor-beneficios {
         width: 95%;
         height: 100%;
         align-items: center; }
         .main-container .segundaSeccion .contenedor-beneficios div h3 {
           height: 42px; }
-        .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
+        .main-container .segundaSeccion .contenedor-beneficios #Beneficios {
           height: 700px;
-          padding: 10px; }
-          .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
+          padding: 10px;
+          justify-content: space-evenly; }
+          .main-container .segundaSeccion .contenedor-beneficios #Beneficios li {
             padding: 10px;
-            width: 100%; }
+            width: 100%;
+            border-bottom: 1px solid #fafafa;
+            background-color: #0b0b0e;
+            color: #fdfdfd; }
     .main-container .terceraSeccion {
       grid-area: terceraseccion;
       display: flex;
@@ -566,6 +670,8 @@ Header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
+  .enviarMsj {
+    transform: translate(50px, 20px); }
   .contenedor-mensaje div {
     padding: 10px; }
   input {
@@ -579,6 +685,15 @@ Header {
     padding: 5px;
     text-align: center;
     margin: 15px; }
+  .form-label {
+    margin-left: 20px;
+    font-size: 18px; }
+  #exampleFormControlInput1 {
+    width: 80%;
+    margin-left: 15px; }
+  #exampleFormControlTextarea1 {
+    margin-left: 8px;
+    width: 95%; }
   .contenedor-cuenta {
     height: 100%;
     margin: 10px;
@@ -648,45 +763,32 @@ Header {
       .contenedorHistoria #seccionHistoria .texto-historia {
         margin: 30px; }
     .contenedorHistoria #seccionFamosos {
-      grid-area: seccion2;
       width: 95%;
-      height: 90%;
-      display: flex;
-      flex-direction: column;
-      margin-top: 30px;
-      margin-bottom: 30px; }
-      .contenedorHistoria #seccionFamosos div .titulo-famosos {
-        font-size: 30px;
+      padding: 10px;
+      height: 100%; }
+      .contenedorHistoria #seccionFamosos .contenedorTitulo h3 {
         text-align: center;
-        margin: 15px; }
-      .contenedorHistoria #seccionFamosos .ip-man div .titulo-ipman {
-        text-align: center;
-        font-size: 25px;
-        margin: 15px; }
-  .ipman-foto {
-    height: 350px;
-    width: 90%; }
-    .ipman-foto img {
-      margin-left: 50px; }
-  .titulo-bruce {
-    font-size: 25px;
-    text-align: center;
-    margin: 15px; }
-  .foto-brucelee {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-  .foto-brucelee img {
-    width: 95%;
-    height: 100%;
-    transform: translateX(100px); }
-  .ipmanTexto {
-    margin: 5px;
-    padding: 10px; }
-  .textoBruce {
-    margin: 8px;
-    padding: 10px; }
+        font-size: 30px; }
+      .contenedorHistoria #seccionFamosos .contenedorIpman {
+        height: 45%;
+        width: 100%; }
+        .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorTextoIp .titulo-ip h3 {
+          font-size: 25px;
+          padding: 7px; }
+        .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorTextoIp .texto-ip p {
+          padding: 7px; }
+        .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg {
+          height: 40%;
+          background-color: #5c5d5f; }
+          .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg .img-ip {
+            width: 100%;
+            height: 100%; }
+            .contenedorHistoria #seccionFamosos .contenedorIpman .contenedorImg .img-ip img {
+              height: 100%;
+              width: 100%; }
+      .contenedorHistoria #seccionFamosos .contenedorBruce {
+        display: flex;
+        flex-direction: column-reverse; }
   /*seccion taller*/
   #seccion-taller {
     display: flex;
@@ -704,9 +806,10 @@ Header {
     margin-top: 20px; }
   tr, td {
     padding: 5px;
-    font-size: 14px; }
+    font-size: 13px; }
   th {
-    padding: 4px; }
+    padding: 4px;
+    text-align: center; }
   #tabla {
     margin: 10px; }
   #ubicacion {
@@ -742,7 +845,8 @@ footer {
       transform: scale(1.5, 1.5);
       transition: all 1s; }
     footer .contenedor-redes i {
-      color: #0f0f0f; }
+      color: #0f0f0f;
+      font-size: 25px; }
 
 @keyframes movimiento {
   0% {
@@ -829,8 +933,7 @@ footer {
         animation-direction: alternate; }
       .main-container #aside #descuento .form-descuento {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around; }
+        flex-direction: column; }
   .main-container .segundaSeccion {
     grid-area: segundaseccion;
     display: flex;
@@ -842,13 +945,13 @@ footer {
       .main-container .segundaSeccion .contenedor-objetivos div .titulo-objetivos {
         text-align: center;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 12px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-      .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos {
+      .main-container .segundaSeccion .contenedor-objetivos #Objetivos {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column; }
-        .main-container .segundaSeccion .contenedor-objetivos .ul-objetivos li {
+        .main-container .segundaSeccion .contenedor-objetivos #Objetivos li {
           list-style: none; }
     .main-container .segundaSeccion .contenedor-beneficios {
       display: flex;
@@ -857,12 +960,11 @@ footer {
         text-align: center;
         font-size: 40px;
         margin: 15px; }
-      .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios {
+      .main-container .segundaSeccion .contenedor-beneficios #Beneficios {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center; }
-        .main-container .segundaSeccion .contenedor-beneficios .ul-beneficios li {
+        .main-container .segundaSeccion .contenedor-beneficios #Beneficios li {
           list-style: none; }
   .main-container .terceraSeccion {
     grid-area: terceraseccion; }
@@ -972,23 +1074,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column; }
-  .contenedorHistoria #seccionFamosos .ipman-foto {
-    animation-name: ipman;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    height: 400px;
-    width: 900px; }
-
-.bruce-lee {
-  display: flex;
-  flex-direction: column; }
-
-.foto-brucelee {
-  width: 50%; }
-
-.img-bruce {
-  width: 100%;
-  height: 100%; }
 
 /*seccion taller*/
 #seccion-taller {
